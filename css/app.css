@@ -14,3 +14,75 @@ html, body {
   display: table-cell;
   vertical-align: middle;
 }
+
+.container {
+    padding-bottom: 15px;
+}
+
+/* Navbar */
+h1.navbar-brand {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 15px;
+}
+
+/* Tabs */
+
+.nav-pills .nav-link {
+    background-color: #eee;
+}
+
+/* Slider */
+
+.item {
+    display: block;
+}
+
+.item img {
+    height: 10rem;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    background-image: url('../img/movietracker-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.media {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.media img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #ccc;
+    background-image: url('../img/movietracker-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    margin-top: 1rem;
+}
+
+.media:after {
+    content: '\f105';
+    width: 12px;
+    font-family: FontAwesome;
+    font-size: 36px;
+    line-height: 1.7;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.map {
+    height: 255px;
+    margin-bottom: 15px;
+}

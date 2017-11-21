@@ -20,6 +20,10 @@ html, body {
 }
 
 /* Navbar */
+.navbar {
+    box-shadow: 0px 1px 10px #999;
+}
+
 h1.navbar-brand {
     margin-bottom: 0;
 }
@@ -33,6 +37,10 @@ h1.navbar-brand {
 }
 
 /* Tabs */
+
+.nav {
+    margin-top: 15px;
+}
 
 .nav-pills .nav-link {
     background-color: #eee;
@@ -48,7 +56,7 @@ h1.navbar-brand {
     height: 10rem;
     background-color: #ccc;
     border: 1px solid #aaa;
-    background-image: url('../img/movietracker-logo.svg');
+    background-image: url('../img/movietracker-logo-blanco.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -64,7 +72,7 @@ h1.navbar-brand {
     height: 40px;
     border: 1px solid #000;
     background-color: #ccc;
-    background-image: url('../img/movietracker-logo.svg');
+    background-image: url('../img/movietracker-logo-blanco.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -85,4 +93,29 @@ h1.navbar-brand {
 .map {
     height: 255px;
     margin-bottom: 15px;
+}
+
+.fanart {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    background-color: #ccc;
+    background-image: url('../img/movietracker-logo-blanco.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+}
+
+.btn-collapse {
+    position: relative;
+    margin: -20px auto 20px;
+    border-radius: 25px;
+    height: 42px;
+}
+
+.seleccionar-fecha {
+    padding: 15px 0 0;
+    margin-bottom: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }

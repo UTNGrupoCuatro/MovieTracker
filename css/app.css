@@ -90,6 +90,19 @@ h1.navbar-brand {
     top: 0;
 }
 
+.media .badge {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+}
+
+.badge.badge-secondary {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: inherit;
+}
+
 .map {
     height: 255px;
     margin-bottom: 15px;

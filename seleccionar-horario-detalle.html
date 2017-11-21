@@ -31,6 +31,25 @@
         </ul>
     </nav>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="fanart">
+                <div class="container">
+                    <h1>Título de la película</h1>
+                </div>
+                <img src="#" alt="Título de la película">
+            </div>
+
+            <a class="btn btn-primary btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="container">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Preguntar si no es mejor hacer una lista -->
         <div class="seleccion">
@@ -47,16 +66,56 @@
                 Calle 123
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="fecha">
                         sábado 20/11
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="horario">
-                        21:15
+            </div>
+        </div>
+        <hr>
+        <div class="seleccionar-horario">
+            <h3>Seleccionar horario</h3>
+            <div class="custom-controls-stacked">
+                <label class="custom-control custom-radio">
+                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="custom-control-description">Castellano 3D</span><br>
+                            <sup class="custom-control-description">Quedan <strong>20</strong> asientos</sup>
+                        </div>
+                        <div class="col-4">
+                            <span class="badge badge-secondary">21:15</span>
+                        </div>
                     </div>
-                </div>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="custom-control-description">Subtitulada 2D</span><br>
+                            <sup class="custom-control-description">Quedan <strong>68</strong> asientos</sup>
+                        </div>
+                        <div class="col-4">
+                            <span class="badge badge-secondary">21:30</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="custom-control-description">Subtitulada 3D</span><br>
+                            <sup class="custom-control-description">Quedan <strong>15</strong> asientos</sup>
+                        </div>
+                        <div class="col-4">
+                            <span class="badge badge-secondary">21:35</span>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
         <hr>

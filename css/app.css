@@ -160,3 +160,15 @@ h1.navbar-brand {
 .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
     background-image: none;
 }
+
+.login, .register {
+    margin-top: 15px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}

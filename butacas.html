@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="https://use.fontawesome.com/a89bf0eb2b.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+
+        <a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <div class="navbar-brand">
+            Elegir butacas
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="perfil.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="seleccion">
+            <div class="nombre-pelicula">
+                Superman
+            </div>
+            <sup class="subtitulos">Subtitulada</sup>
+            <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="seleccion">
+                    <div class="nombre-cine">
+                        Hoyts Puerto Madero
+                    </div>
+                    <div class="direccion-cine">
+                        Calle 123
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="fecha">
+                                sábado 20/11
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="horario">
+                                21:15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="valor-entradas">
+                <div class="row">
+                    <div class="col-8">
+                        <strong>Valor de cada entrada:</strong>
+                    </div>
+                    <div class="col-4">
+                        <strong>$160</strong>
+                    </div>
+                    <div class="col-12">
+                        Sin beneficio aplicado
+                    </div>
+                </div>
+            </div>
+
+            <div class="elegir-butacas">
+                <div class="row">
+                    <div class="col-12">
+                        <strong>Elegir butacas</strong><br>
+                        <sup>Con el beneficio seleccionado solo podés comprar <strong>2</strong> entradas</sup>
+                    </div>
+                </div>
+
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A1</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A2</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A3</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A4</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A5</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A6</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A7</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A8</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A9</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A10</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A11</span>
+                                </label>
+                            </th>
+                            <th scope="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">A12</span>
+                                </label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">B12</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">C12</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">D12</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">E12</span>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">F12</span>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">G12</span>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H1</span>
+                                </label>
+                            </th>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H2</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H3</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H4</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H5</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H6</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H7</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H8</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H9</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H10</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H11</span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator">H12</span>
+                                </label>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="eleccion">
+                <h3>Tu elección de butacas</h3>
+                <p>20 y 21. Fila 3. <strong>Sala 1</strong></p>
+            </div>
+
+            <a class="btn btn-primary btn-block" href="checkout.html">Comprar entradas</a>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

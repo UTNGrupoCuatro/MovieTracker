@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar sticky-top navbar-dark bg-primary">
 
-        <a class="nav-link" href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         <div class="navbar-brand">
             Tu selección
         </div>
@@ -32,99 +32,128 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <!-- Preguntar si no es mejor hacer una lista -->
-        <div class="seleccion">
-            <div class="nombre-pelicula">
-                Superman
-            </div>
-            <div class="subtitulos">
-                Subtitulada
-            </div>
-            <div class="nombre-cine">
-                Hoyts Puerto Madero
-            </div>
-            <div class="direccion-cine">
-                Calle 123
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="fecha">
-                        sábado 20/11
+    <!-- Preguntar si no es mejor hacer una lista -->
+    <div class="seleccion">
+        <div class="container">
+            <div class="detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-film" aria-hidden="true"></i>
+                        <span class="sr-only">Película: </span>
+                    </div>
+                    <div class="col-11">
+                        <h2>La liga de la justicia</h2>
+                        <!-- <small>Subtitulada 2D</small> -->
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="seleccionar-horario">
-            <h3>Seleccionar horario</h3>
-            <div class="custom-controls-stacked">
-                <label class="custom-control custom-radio">
-                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <div class="row">
-                        <div class="col-8">
-                            <span class="custom-control-description">Castellano 3D</span><br>
-                            <small class="custom-control-description">Quedan <strong>20</strong> asientos</small>
+            <div class="detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span class="sr-only">Cine: </span>
+                    </div>
+                    <div class="col-11">
+                        <h2>Hoyts Abasto</h2>
+                        <small>Av. Corrientes 3247, CABA</small>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="sr-only">Fecha: </span>
+                    </div>
+                    <div class="col-5">
+                        <div class="fecha">
+                            sábado 20/11
                         </div>
-                        <div class="col-4">
+                    </div>
+                    <div class="col-1">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span class="sr-only">Horario: </span>
+                    </div>
+                    <div class="col-5">
+                        <div class="horario">
+                            21:15
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3>Horarios</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <h4>Subtitulada 2D</h4>
+                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>23</strong> asientos</small>
+                            </label>
                             <span class="badge badge-secondary">21:15</span>
                         </div>
-                    </div>
-                </label>
-                <label class="custom-control custom-radio">
-                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <div class="row">
-                        <div class="col-8">
-                            <span class="custom-control-description">Subtitulada 2D</span><br>
-                            <small class="custom-control-description">Quedan <strong>68</strong> asientos</small>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <h4>Castellano 2D</h4>
+                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>12</strong> asientos</small>
+                            </label>
+                            <span class="badge badge-secondary">21:45</span>
                         </div>
-                        <div class="col-4">
-                            <span class="badge badge-secondary">21:30</span>
-                        </div>
-                    </div>
-                </label>
-                <label class="custom-control custom-radio">
-                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <div class="row">
-                        <div class="col-8">
-                            <span class="custom-control-description">Subtitulada 3D</span><br>
-                            <small class="custom-control-description">Quedan <strong>15</strong> asientos</small>
-                        </div>
-                        <div class="col-4">
-                            <span class="badge badge-secondary">21:35</span>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <h4>Subtitulada 3D</h4>
+                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>40</strong> asientos</small>
+                            </label>
+                            <span class="badge badge-secondary">22:30</span>
                         </div>
                     </div>
-                </label>
-            </div>
-        </div>
-        <hr>
-        <label for="inputState" class="sr-only">Seleccionar beneficio</label>
-        <select id="inputState" class="form-control">
-            <option selected>Seleccionar beneficio</option>
-            <option>Club La Nación 2x1</option>
-            <option>Clarin 365 2x1</option>
-            <option>Club Personal 2x1</option>
-            <option>Cablevisión Clientes 2x1</option>
-        </select>
-        <div class="valor-entradas">
-            <div class="row">
-                <div class="col-8">
-                    <strong>Valor de cada entrada:</strong>
-                </div>
-                <div class="col-4">
-                    <strong>$160</strong>
-                </div>
-                <div class="col-12">
-                    Sin beneficio aplicado
                 </div>
             </div>
+
+            <div class="detalle-seleccion">
+                <label for="inputState">Tarjeta de beneficios</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Seleccionar beneficio</option>
+                    <option>Club La Nación 2x1</option>
+                    <option>Clarin 365 2x1</option>
+                    <option>Club Personal 2x1</option>
+                    <option>Cablevisión Clientes 2x1</option>
+                </select>
+            </div>
+
+            <div class="detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-8">
+                        <h3>Valor de cada entrada:</h3>
+                        <small>Sin beneficio aplicado</small>
+                    </div>
+                    <div class="col-3 text-right">
+                        <strong>$160</strong>
+                    </div>
+                    <div class="col-12">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
+            <a class="btn btn-outline-primary btn-block" href="como-llegar.html">Como llegar</a>
         </div>
-        <hr>
-        <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
-        <a class="btn btn-outline-primary btn-block" href="como-llegar.html">Como llegar</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

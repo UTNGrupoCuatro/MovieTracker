@@ -30,7 +30,7 @@
         </ul>
     </nav>
 
-    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+    <ul class="nav main-nav nav-pills nav-justified" id="myTab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por película</a>
         </li>
@@ -154,10 +154,23 @@
                     <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
                 </div>
             </div>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fa fa-car" aria-hidden="true"></i> 15min</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-train" aria-hidden="true"></i> 40min</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i> 1h 20min</a>
+                </li>
+            </ul>
 
             <div class="map" id="map"></div>
 
             <div class="container">
+                <h2><i class="fa fa-map-marker" aria-hidden="true"></i> ¡Encontramos 7 cines cercanos!</h2>
+                <hr>
                 <div class="resultados">
                     <a href="cine.html" class="media">
                         <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">

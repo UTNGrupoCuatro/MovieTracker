@@ -33,136 +33,190 @@
     </nav>
 
     <div class="container">
-        <div class="seleccion">
-            <div class="nombre-pelicula">
-                Superman
-            </div>
-            <small class="subtitulos">Subtitulada</small>
-            <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            <div class="collapse" id="collapseExample">
-                <div class="seleccion">
-                    <div class="nombre-cine">
-                        Hoyts Puerto Madero
+        <div class="detalle-seleccion">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-film" aria-hidden="true"></i>
+                    <span class="sr-only">Película: </span>
+                </div>
+                <div class="col-11">
+                    <h2>La liga de la justicia</h2>
+                    <small>Subtitulada 2D</small>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     </div>
-                    <div class="direccion-cine">
-                        Calle 123
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="fecha">
-                                sábado 20/11
+                    <div class="collapse" id="collapseExample">
+                        <div class="seleccion">
+                            <div class="detalle-seleccion">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span class="sr-only">Cine: </span>
+                                    </div>
+                                    <div class="col-11">
+                                        <h2>Hoyts Abasto</h2>
+                                        <small>Av. Corrientes 3247, CABA</small>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="horario">
-                                21:15
+                            <div class="detalle-seleccion">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span class="sr-only">Fecha: </span>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="fecha">
+                                            sábado 20/11
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span class="sr-only">Horario: </span>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="horario">
+                                            21:15
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="valor-entradas">
-                <div class="row">
-                    <div class="col-8">
-                        <strong>Valor de cada entrada:</strong>
-                    </div>
-                    <div class="col-4">
-                        <strong>$160</strong>
-                    </div>
-                    <div class="col-12">
-                        Sin beneficio aplicado
-                    </div>
+        <div class="detalle-seleccion">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                </div>
+                <div class="col-8">
+                    <h3>Valor de cada entrada:</h3>
+                    <small>Sin beneficio aplicado</small>
+                </div>
+                <div class="col-3 text-right">
+                    <strong>$160</strong>
                 </div>
             </div>
+        </div>
 
             <div class="elegir-butacas">
                 <div class="row">
                     <div class="col-12">
-                        <strong>Elegir butacas</strong><br>
-                        <small>Con el beneficio seleccionado solo podés comprar <strong>2</strong> entradas</small>
+                        <div class="p-3 mb-2 bg-info text-dark">
+                            <small>Con este beneficio seleccionado solo podés comprar <strong>2 entradas</strong></small>
+                        </div>
                     </div>
                 </div>
 
-                <table class="table table-responsive">
+                <hr>
+
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-braille" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3>Elegir butacas:</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col ocupado">
+                        <i class="fa fa-square-o" aria-hidden="true"></i> <span>Ocupado</span>
+                    </div>
+                    <div class="col disponible">
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Disponible</span>
+                    </div>
+                    <div class="col seleccionado">
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado</span>
+                    </div>
+                </div>
+
+                <table class="table table-butacas table-responsive">
                     <thead>
                         <tr>
-                            <th scope="col">
+                            <th scope="col" colspan="12" class="screen">Pantalla</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A1</span>
                                 </label>
                             </th>
-                            <th scope="col">
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A2</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A3</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A4</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A5</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A6</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A7</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A8</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A9</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A10</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A11</span>
                                 </label>
-                            </th>
-                            <th scope="col">
+                            </td>
+                            <td>
                                 <label class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A12</span>
                                 </label>
-                            </th>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <th scope="row">
                                 <label class="custom-control custom-checkbox">
@@ -326,19 +380,19 @@
                             </td>
                             <td>
                                 <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
+                                    <input type="checkbox" class="custom-control-input" disabled>
                                     <span class="custom-control-indicator">D3</span>
                                 </label>
                             </td>
                             <td>
                                 <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
+                                    <input type="checkbox" class="custom-control-input" disabled>
                                     <span class="custom-control-indicator">D4</span>
                                 </label>
                             </td>
                             <td>
                                 <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
+                                    <input type="checkbox" class="custom-control-input" disabled>
                                     <span class="custom-control-indicator">D5</span>
                                 </label>
                             </td>
@@ -459,7 +513,6 @@
                                 </label>
                             </td>
                         </tr>
-
                         <tr>
                             <th scope="row">
                                 <label class="custom-control custom-checkbox">
@@ -534,7 +587,6 @@
                                 </label>
                             </td>
                         </tr>
-
                         <tr>
                             <th scope="row">
                                 <label class="custom-control custom-checkbox">
@@ -556,13 +608,13 @@
                             </td>
                             <td>
                                 <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
+                                    <input type="checkbox" class="custom-control-input" checked>
                                     <span class="custom-control-indicator">G4</span>
                                 </label>
                             </td>
                             <td>
                                 <label class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input">
+                                    <input type="checkbox" class="custom-control-input" checked>
                                     <span class="custom-control-indicator">G5</span>
                                 </label>
                             </td>
@@ -609,7 +661,6 @@
                                 </label>
                             </td>
                         </tr>
-
                         <tr>
                             <th scope="row">
                                 <label class="custom-control custom-checkbox">
@@ -684,16 +735,21 @@
                                 </label>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
 
-            <hr>
-
-            <div class="eleccion">
+            <div class="elegir-butacas">
                 <h3>Tu elección de butacas</h3>
-                <p>20 y 21. Fila 3. <strong>Sala 1</strong></p>
+                <hr>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-braille" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>20 y 21. Fila 3. <strong>Sala 1</strong></p>
+                    </div>
+                </div>
             </div>
 
             <a class="btn btn-primary btn-block" href="checkout.html">Comprar entradas</a>

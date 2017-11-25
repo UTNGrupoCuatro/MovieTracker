@@ -290,6 +290,32 @@ a.media {
     box-shadow: 0 1px 10px #444;
 }
 
+.detalle-seleccion,
+.elegir-butacas {
+    margin-top: 15px;
+}
+
+.detalle-seleccion .fa,
+.elegir-butacas .fa {
+    color: #215AA6;
+}
+
+.elegir-butacas span {
+    font-size: 70%;
+}
+
+.elegir-butacas .ocupado .fa{
+    color: #007bff;
+}
+
+.elegir-butacas .disponible .fa{
+    color: #ddd;
+}
+
+.elegir-butacas .seleccionado .fa{
+    color: #007bff;
+}
+
 .table thead th {
     border: none;
 }
@@ -297,6 +323,20 @@ a.media {
 .table td, .table th {
     padding: 0.15rem 0;
     border: none;
+}
+
+.table-butacas {
+    margin-top: 15px;
+    padding: .05rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.screen {
+    background-color: #eee;
+    text-align: center;
+    font-size: 75%;
+    margin: 0 .25rem;
 }
 
 .custom-control {
@@ -308,14 +348,20 @@ a.media {
 }
 
 .custom-control-indicator {
-    width: inherit;
-    height: inherit;
-    padding: 0 .25rem;
+    width: 2rem;
+    height: 1.5rem;
+    padding: .25rem;
     left: .25rem;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
     background-image: none;
+}
+
+.custom-control-input:disabled~.custom-control-indicator {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
 }
 
 .login, .register {
@@ -335,3 +381,12 @@ a.media {
 .near {color: green !important;}
 .halfway {color: orange !important;}
 .far {color: red !important;}
+
+
+
+
+.bg-info {
+    border-radius: 4px;
+    border: 1px solid #56CCF2;
+    background-color: rgba(86, 204, 242, 0.3) !important;
+}

@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+
+    <nav class="navbar navbar-dark bg-primary">
         <h1 class="navbar-brand">MovieTracker</h1>
 
         <ul class="navbar-nav">
@@ -28,16 +29,14 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por película</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por cine cercano</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por película</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por cine cercano</a>
+        </li>
+    </ul>
 
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="movies" role="tabpanel" aria-labelledby="movies">
@@ -196,7 +195,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>

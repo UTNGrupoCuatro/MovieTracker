@@ -1,13 +1,18 @@
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-      margin: 10,
-      items: 3,
-      stagePadding: 15,
-      loop: false,
-      nav: false,
-      dots: false
-  });
+    $(".owl-carousel").owlCarousel({
+        margin: 10,
+        items: 3,
+        stagePadding: 30,
+        loop: false,
+        nav: false,
+        dots: false
+    });
 });
+
+$(window).on("load", (function() {
+    $(".loader").delay(1500).fadeOut(),
+    $(".mask").delay(1500).fadeOut()
+}));
 
 // mapa
 var map = L.map('map', {

@@ -12,6 +12,9 @@ h4 {font-size: 1rem;}
 h5 {font-size: 0.9rem; font-weight: 700;}
 h6 {font-size: 0.75rem;}
 
+.fa-2x {
+    font-size: 1.7rem;
+}
 
 .input-group .form-control:not(:first-child):not(:last-child),
 .input-group-addon:not(:first-child):not(:last-child),
@@ -102,6 +105,10 @@ h6 {font-size: 0.75rem;}
     box-shadow: 0px 1px 10px #444;
 }
 
+.navbar .fa {
+    color: #B4D1F9;
+}
+
 .navbar-dark.bg-primary a,
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -109,7 +116,7 @@ h6 {font-size: 0.75rem;}
 
 h1.navbar-brand {
     margin-bottom: 0;
-    width: 70%;
+    width: 60%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

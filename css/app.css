@@ -81,6 +81,14 @@ h6 {font-size: 0.75rem;}
   vertical-align: middle;
 }
 
+.welcome-container.ingresar {
+    color: inherit;
+}
+
+.ingresar img {
+    padding: 1rem;
+}
+
 .container {
     padding-bottom: 15px;
 }
@@ -97,6 +105,10 @@ h6 {font-size: 0.75rem;}
 
 h1.navbar-brand {
     margin-bottom: 0;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .navbar-nav {

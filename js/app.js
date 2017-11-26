@@ -14,6 +14,10 @@ $(window).on("load", (function() {
     $(".mask").delay(1500).fadeOut()
 }));
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 // mapa
 var map = L.map('map', {
     center: [-34.6080293, -58.4841172],

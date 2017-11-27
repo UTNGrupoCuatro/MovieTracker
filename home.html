@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Movie Tracker</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -166,7 +172,7 @@
                 </li>
             </ul>
 
-            <div class="map" id="map"></div>
+            <div class="map" id="mapid"></div>
 
             <div class="container">
                 <h2><i class="fa fa-map-marker" aria-hidden="true"></i> ¡Encontramos 7 cines cercanos!</h2>
@@ -236,8 +242,48 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        // var map = L.map('mapid').setView([-34.6080293, -58.4841172], 13);
+        //
+        // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        //     attribution: '',
+        //     maxZoom: 18,
+        //     id: 'mapbox.streets',
+        //     accessToken: 'pk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkydHNtZTF0cHMycWxlODcycjJpN3cifQ.0n-1eksPl4JXt67Zr0WhIg'
+        // }).addTo(map);
+        //
+        // L.marker([-34.6080293, -58.4841172]).addTo(map)
+        //     .bindPopup('Nombre del cine.')
+        //     .openPopup();
+        //
+        // var circle = L.circle([-34.6080293, -58.4841172], {
+        //     color: 'red',
+        //     fillColor: '#f03',
+        //     fillOpacity: 0.5,
+        //     radius: 500
+        // }).addTo(map);
+        var map = L.map('mapid').fitWorld();
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkzY3J2MjF2MjEycXJ6enVmNzgxYnYifQ.Nx82r7jy9mbJRRryxVhjjg', {
+            attribution: '',
+            maxZoom: 18
+        }).addTo(map);
+        map.locate({setView: true, maxZoom: 16});
+
+        function onLocationFound(e) {
+            var radius = e.accuracy / 2;
+
+            L.marker(e.latlng).addTo(map)
+                .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+            L.circle(e.latlng, radius).addTo(map);
+        }
+
+        map.on('locationfound', onLocationFound);
+
+    </script>
 </body>
 </html>

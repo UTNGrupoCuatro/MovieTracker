@@ -286,8 +286,10 @@ a.media:after {
 }
 
 .map {
+    width: 100vw;
     height: 255px;
     margin-bottom: 15px;
+    display: block;
 }
 
 .fanart {

@@ -446,9 +446,9 @@ a.media:after {
 
 /* Distancias */
 
-.near {color: green !important;}
-.halfway {color: orange !important;}
-.far {color: red !important;}
+/*.near {color: #ccc !important;}
+.halfway {color: #ccc !important;}
+.far {color: #ccc !important;}*/
 
 
 

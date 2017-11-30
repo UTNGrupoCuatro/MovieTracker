@@ -8,13 +8,3 @@ $(document).ready(function(){
         dots: false
     });
 });
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-// mapa
-// var map = L.map('map', {
-//     center: [-34.6080293, -58.4841172],
-//     zoom: 10
-// });

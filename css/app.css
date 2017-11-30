@@ -3,10 +3,14 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
 h1, h2, h3, h4, h5, h6 {font-weight: 600;}
 
 h1 {font-size: 1.5rem;}
-h1.app-title {font-size: 36px; padding: 20px 0 10px;}
+h1.app-title {font-size: 36px; padding: 20px 0 10px; font-family: 'Righteous', cursive;}
 h2 {font-size: 1.3rem; margin-bottom: 0;}
 h3 {font-size: 1.1rem;}
 h4 {font-size: 1rem;}
@@ -16,6 +20,7 @@ h6 {font-size: 0.75rem;}
 .lead-title {
     font-family: 'Montserrat';
     font-size: 17px;
+    line-height: 23px;
     font-weight: 300;
     width: 330px;
 }
@@ -109,10 +114,6 @@ h6 {font-size: 0.75rem;}
 }
 
 /* Navbar */
-.navbar {
-    box-shadow: 0px 1px 10px #444;
-}
-
 .navbar .fa {
     color: #B4D1F9;
 }
@@ -146,8 +147,8 @@ h1.navbar-brand {
 }
 
 .nav.main-nav.nav-pills .nav-link {
-    background-color: #007bff;
-    color: rgba(255,255,255,0.3);
+    //background-color: #007bff;
+    //color: rgba(255,255,255,0.3);
     border-radius: 0;
     border-bottom: 2px solid transparent;
     height: 100%;
@@ -163,8 +164,8 @@ h1.navbar-brand {
 
 .nav.main-nav.nav-pills .nav-link.active,
 .nav.main-nav.nav-pills .show>.nav-link {
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #4B9CFC;
+    color: #4B9CFC;
 }
 
 .nav {
@@ -173,7 +174,7 @@ h1.navbar-brand {
 
 .nav-pills .nav-link {
     background-color: #fff;
-    color: rgba(47,128,237,0.3);
+    color: rgba(47,128,237,0.5);
 }
 
 .nav.nav-pills .nav-item {

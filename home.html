@@ -16,8 +16,8 @@
   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
    crossorigin=""></script>
-   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
-   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
 
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -38,10 +38,10 @@
 
     <ul class="nav main-nav nav-pills nav-justified" id="myTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por película</a>
+            <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por<br />película</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por cine cercano</a>
+            <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por<br />cine cercano</a>
         </li>
     </ul>
 
@@ -245,45 +245,24 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
 
-    <script type="text/javascript">
-        // var map = L.map('mapid').setView([-34.6080293, -58.4841172], 13);
-        //
-        // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        //     attribution: '',
-        //     maxZoom: 18,
-        //     id: 'mapbox.streets',
-        //     accessToken: 'pk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkydHNtZTF0cHMycWxlODcycjJpN3cifQ.0n-1eksPl4JXt67Zr0WhIg'
-        // }).addTo(map);
-        //
-        // L.marker([-34.6080293, -58.4841172]).addTo(map)
-        //     .bindPopup('Nombre del cine.')
-        //     .openPopup();
-        //
-        // var circle = L.circle([-34.6080293, -58.4841172], {
-        //     color: 'red',
-        //     fillColor: '#f03',
-        //     fillOpacity: 0.5,
-        //     radius: 500
-        // }).addTo(map);
-        var map = L.map('mapid').fitWorld();
+    <script>
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkzY3J2MjF2MjEycXJ6enVmNzgxYnYifQ.Nx82r7jy9mbJRRryxVhjjg', {
-            attribution: '',
-            maxZoom: 18
-        }).addTo(map);
-        map.locate({setView: true, maxZoom: 16});
+        L.tileLayer('https://api.mapbox.com/styles/v1/martinmasignano/cjakw0qg3c5cv2spek6i023tu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkydHNtZTF0cHMycWxlODcycjJpN3cifQ.0n-1eksPl4JXt67Zr0WhIg', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
 
-        function onLocationFound(e) {
-            var radius = e.accuracy / 2;
-
-            L.marker(e.latlng).addTo(map)
-                .bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-            L.circle(e.latlng, radius).addTo(map);
-        }
-
-        map.on('locationfound', onLocationFound);
-
+// mapboxgl.accessToken = 'pk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkydHNtZTF0cHMycWxlODcycjJpN3cifQ.0n-1eksPl4JXt67Zr0WhIg';
+        // var map = new mapboxgl.Map({
+        // container: 'mapid',
+        // style: 'mapbox://styles/mapbox/streets-v10',
+        // center: [10, 15],
+        // zoom: 11.15
+        // });
     </script>
+
 </body>
 </html>

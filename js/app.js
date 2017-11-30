@@ -9,11 +9,6 @@ $(document).ready(function(){
     });
 });
 
-$(window).on("load", (function() {
-    $(".loader").delay(1500).fadeOut(),
-    $(".mask").delay(1500).fadeOut()
-}));
-
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })

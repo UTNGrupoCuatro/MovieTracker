@@ -42,141 +42,140 @@
                 <img src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
             </div>
 
-            <a class="btn btn-primary btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
             <div class="collapse" id="collapseExample">
-                <div class="container">
+                <div class="container movie-description">
                     <p>Motivado por su renovada fe en la humanidad e inspirado por el acto abnegado de Superman, Bruce Wayne une fuerzas con su nueva aliada, Diana Prince, para enfrentar a un enemigo más amenazador.</p>
-                    <p><strong>Protagonizada por: </strong> Ben Affleck, Gal Gadot, Henry Cavill<br />
+                    <p class="cast"><strong>Protagonizada por: </strong> Ben Affleck, Gal Gadot, Henry Cavill<br />
                     <strong>Director: </strong> Zack Snyder<br />
                     <strong>Género: </strong>Comic, Aventuras, Acción </p>
                 </div>
             </div>
+            <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
     </div>
 
     <div class="container">
-
         <div class="card seleccionar-fecha">
             <div class="card-body">
                 <span><i class="fa fa-calendar" aria-hidden="true"></i> Fecha:<br /> <a href="#">sábado 28/11 <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
             </div>
         </div>
+    </div>
 
-        <div class="card">
-            <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="horario" data-toggle="tab" href="#horarios" role="tab" aria-controls="horario" aria-selected="true">Ordenar por horario</a>
+
+    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="horario" data-toggle="tab" href="#horarios" role="tab" aria-controls="horario" aria-selected="true">Ordenar por<br />horario</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cercania" data-toggle="tab" href="#cercanias" role="tab" aria-controls="cercania" aria-selected="false">Ordenar por<br />cercanía</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="horarios" role="tabpanel" aria-labelledby="horario">
+            <div class="container listado">
+                <a href="seleccion.html" class="media">
+                    <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
+                    <div class="media-body">
+                        <h5 class="mt-0">Hoyts Abasto</h5>
+                        <p>Subtitulada 2D</p>
+                        <span class="badge badge-secondary">21:15</span>
+                    </div>
+                </a>
+                <a href="seleccion.html" class="media">
+                    <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero">
+                    <div class="media-body">
+                        <h5 class="mt-0">Cinemark Puerto Madero</h5>
+                        <p>Subtitulada 2D</p>
+                        <span class="badge badge-secondary">21:20</span>
+                    </div>
+                </a>
+                <a href="seleccion.html" class="media">
+                    <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
+                    <div class="media-body">
+                        <h5 class="mt-0">Cinemark Caballito</h5>
+                        <p>Subtitulada 2D</p>
+                        <span class="badge badge-secondary">21:35</span>
+                    </div>
+                </a>
+                <a href="seleccion.html" class="media">
+                    <img class="mr-3" src="img/logo-village.png" alt="Village Caballito">
+                    <div class="media-body">
+                        <h5 class="mt-0">Village Caballito</h5>
+                        <p>Subtitulada 2D</p>
+                        <span class="badge badge-secondary">21:50</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="cercanias" role="tabpanel" aria-labelledby="cercania">
+            <div class="buscador">
+                <div class="input-group input-group-lg">
+                    <label for="theatresearch" class="sr-only">Buscar por cine</label>
+                    <span class="input-group-addon" id="sizing-addon1">Desde</span>
+                    <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
+                </div>
+            </div>
+
+            <ul class="option-list">
+                <li>
+                    <span><i class="fa fa-car" aria-hidden="true"></i> 15min</span>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="cercania" data-toggle="tab" href="#cercanias" role="tab" aria-controls="cercania" aria-selected="false">Ordenar por cercanía</a>
+                <li>
+                    <span><i class="fa fa-train" aria-hidden="true"></i> 40min</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-male" aria-hidden="true"></i> 1h 20min</span>
                 </li>
             </ul>
 
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="horarios" role="tabpanel" aria-labelledby="horario">
-                    <div class="container">
-                        <div class="resultados">
-                            <a href="seleccion.html" class="media">
-                                <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Hoyts Abasto</h5>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:15</span>
-                                </div>
-                            </a>
-                            <a href="seleccion.html" class="media">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Cinemark Puerto Madero</h5>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:20</span>
-                                </div>
-                            </a>
-                            <a href="seleccion.html" class="media">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Cinemark Caballito</h5>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:35</span>
-                                </div>
-                            </a>
-                            <a href="seleccion.html" class="media">
-                                <img class="mr-3" src="img/logo-village.png" alt="Village Caballito">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Village Caballito</h5>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:50</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="map" id="map"></div>
 
-                <div class="tab-pane fade" id="cercanias" role="tabpanel" aria-labelledby="cercania">
-                    <div class="container">
-                        <div class="input-group input-group-lg">
-                            <label for="theatresearch" class="sr-only">Buscar por cine</label>
-                            <span class="input-group-addon" id="sizing-addon1">Desde</span>
-                            <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
+            <div class="container listado">
+                <h2 class="founded-title">
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> ¡Encontramos <strong>4</strong> cines cercanos!
+                </h2>
+                <hr>
+                <div class="resultados">
+                    <a href="seleccionar-horario.html" class="media">
+                        <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
+                        <div class="media-body">
+                            <h5 class="mt-0">Hoyts Abasto</h5>
+                            <p>Av. Corrientes 3247, CABA</p>
+                            <span class="badge badge-secondary near"><span class="sr-only">Distancia: ¡Estás cerca! Sólo a </span> 150mts</span>
                         </div>
-                    </div>
-                    <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fa fa-car" aria-hidden="true"></i> 15min</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-train" aria-hidden="true"></i> 40min</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i> 1h 20min</a>
-                        </li>
-                    </ul>
-
-                    <div class="map" id="map"></div>
-
-                    <div class="container">
-                        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> ¡Encontramos 4 cines cercanos!</h2>
-                        <hr>
-                        <div class="resultados">
-                            <a href="seleccionar-horario.html" class="media">
-                                <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Hoyts Abasto</h5>
-                                    <p>Av. Corrientes 3247, CABA</p>
-                                    <span class="badge badge-secondary near"><span class="sr-only">Distancia: ¡Estás cerca! Sólo a </span> 150mts</span>
-                                </div>
-                            </a>
-                            <a href="seleccionar-horario.html" class="media">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Cinemark Caballito</h5>
-                                    <p>Av. La Plata 80, CABA</p>
-                                    <span class="badge badge-secondary halfway"><span class="sr-only">distancia: Estás a medio camino. A </span> 1,2km</span>
-                                </div>
-                            </a>
-                            <a href="seleccionar-horario.html" class="media">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Pelermo">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Cinemark Pelermo</h5>
-                                    <p>Antonio Berutti 3399, CABA</p>
-                                    <span class="badge badge-secondary halfway"><span class="sr-only">distancia: Estás a medio camino. A </span> 2,6km</span>
-                                </div>
-                            </a>
-                            <a href="seleccionar-horario.html" class="media">
-                                <img class="mr-3" src="img/logo-village.png" alt="Village Cines Caballito">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Village Cines Caballito</h5>
-                                    <p>Av. Rivadavia 5071, CABA</p>
-                                    <span class="badge badge-secondary far"><span class="sr-only">distancia: ¡Estás lejos! A </span> 4km</span>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="seleccionar-horario.html" class="media">
+                        <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
+                        <div class="media-body">
+                            <h5 class="mt-0">Cinemark Caballito</h5>
+                            <p>Av. La Plata 80, CABA</p>
+                            <span class="badge badge-secondary halfway"><span class="sr-only">distancia: Estás a medio camino. A </span> 1,2km</span>
                         </div>
-                    </div>
+                    </a>
+                    <a href="seleccionar-horario.html" class="media">
+                        <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Pelermo">
+                        <div class="media-body">
+                            <h5 class="mt-0">Cinemark Pelermo</h5>
+                            <p>Antonio Berutti 3399, CABA</p>
+                            <span class="badge badge-secondary halfway"><span class="sr-only">distancia: Estás a medio camino. A </span> 2,6km</span>
+                        </div>
+                    </a>
+                    <a href="seleccionar-horario.html" class="media">
+                        <img class="mr-3" src="img/logo-village.png" alt="Village Cines Caballito">
+                        <div class="media-body">
+                            <h5 class="mt-0">Village Cines Caballito</h5>
+                            <p>Av. Rivadavia 5071, CABA</p>
+                            <span class="badge badge-secondary far"><span class="sr-only">distancia: ¡Estás lejos! A </span> 4km</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

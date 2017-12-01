@@ -127,7 +127,7 @@ hr {
 
             .nav-pills .nav-item .nav-link {
                 border-radius: 0;
-                border-bottom: 2px solid transparent;
+                border-bottom: 1px solid #e0e0e0;
                 height: 100%;
                 font-size: 13px;
                 line-height: 16px;
@@ -303,6 +303,60 @@ a.media:after {
     color: inherit;
 }
 
+/*------------------------ PELÍCULAS ------------------------*/
+
+.fanart {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    background-color: #ccc;
+    background-image: url('../img/movietracker-logo-blanco.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    overflow: hidden;
+}
+
+.fanart .container {
+    position: absolute;
+    top: 15px;
+    z-index: 9;
+}
+
+.fanart img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fanart h1 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.movie-description {
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000;
+    padding-top: 15px;
+}
+
+.movie-description .cast {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.btn-collapse {
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+
 
 
 
@@ -373,37 +427,7 @@ a.media:after {
 
 
 
-.fanart {
-    position: relative;
-    height: 165px;
-    width: 100%;
-    background-color: #ccc;
-    background-image: url('../img/movietracker-logo-blanco.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 10%;
-    overflow: hidden;
-}
 
-.fanart .container {
-    position: absolute;
-    top: 15px;
-    z-index: 9;
-}
-
-.fanart img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.fanart h1 {
-    color: #fff;
-    font-weight: 400;
-}
 
 .card .fanart {
     margin-top: 45px;
@@ -426,13 +450,7 @@ a.media:after {
     margin: 0 auto;
 }
 
-.btn-collapse {
-    position: relative;
-    margin: -20px auto 20px;
-    border-radius: 25px;
-    height: 42px;
-    box-shadow: 0 4px 10px #eee;
-}
+
 
 .seleccionar-fecha {
     margin-bottom: 15px;

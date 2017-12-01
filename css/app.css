@@ -20,6 +20,11 @@ h6 {font-size: 0.75rem;}
     padding-bottom: 15px;
 }
 
+/*------------------------ INPUTS ------------------------*/
+.form-control {
+    color: #000;
+}
+
 /*------------------------ SPLASH ------------------------*/
 
     .mask {
@@ -99,6 +104,86 @@ h6 {font-size: 0.75rem;}
         text-overflow: ellipsis;
     }
 
+/*------------------------ TABS ------------------------*/
+
+    .main-nav {
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 10px #444;
+        position: sticky;
+        top: 62px;
+        z-index: 9;
+    }
+
+        .nav-pills .nav-item {
+            border-bottom: 0;
+        }
+
+            .nav-pills .nav-item .nav-link {
+                border-radius: 0;
+                border-bottom: 2px solid transparent;
+                height: 100%;
+                font-size: 13px;
+                line-height: 16px;
+                background-color: #fff;
+                color: rgba(47,128,237,0.5);
+            }
+
+
+        .nav-pills .nav-item:not(first-child) {
+            border-right: 1px solid #f0f0f0;
+        }
+
+        .nav-pills .nav-item .nav-link.active,
+        .nav-pills .show>.nav-link {
+            border-bottom: 2px solid #4B9CFC;
+            color: #4B9CFC;
+        }
+
+/*------------------------ BUSCAR POR PELÍCULA ------------------------*/
+
+    .buscador {
+        width: 100%;
+        padding: 20px 15px;
+        background-color: #fff;
+    }
+
+    .owl-carousel {
+        margin-bottom: 30px;
+        padding-top: 15px;
+        background-color: #fff;
+    }
+
+    .carousel-title {
+        font-size: 15px;
+    	font-weight: 600;
+    	color: #000000;
+        margin-top: 15px;
+    }
+
+    .movie-title {
+        font-size: 13px;
+        line-height: 16px;
+    	font-weight: 500;
+    	color: #000000;
+        margin-top: 15px;
+    }
+
+    .item {
+        display: block;
+    }
+
+        .item img {
+            height: 170px;
+            background-color: #eee;
+            background-image: url('../img/movietracker-logo-blanco.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            box-shadow: 0 3px 10px #aaa;
+            border-radius: 4px;
+            max-width: 120px;
+        }
+
 
 
 
@@ -169,102 +254,13 @@ h6 {font-size: 0.75rem;}
 }
 
 
-/* Tabs */
-
-.nav.main-nav {
-    margin-bottom: 15px;
-    box-shadow: 0px 1px 10px #444;
-}
-
-.nav.main-nav.nav-pills .nav-link {
-    //background-color: #007bff;
-    //color: rgba(255,255,255,0.3);
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    height: 100%;
-}
-
-.nav.main-nav.nav.nav-pills .nav-item {
-    border-bottom: 0;
-}
-
-.nav.main-nav.nav.nav-pills .nav-item:first-child {
-    border-right: 1px solid #4B9CFC;
-}
-
-.nav.main-nav.nav-pills .nav-link.active,
-.nav.main-nav.nav-pills .show>.nav-link {
-    border-bottom: 2px solid #4B9CFC;
-    color: #4B9CFC;
-}
-
-.nav {
-    box-shadow: none;
-}
-
-.nav-link {
-    font-size: 13px;
-    line-height: 16px;
-}
-
-.nav-pills .nav-link {
-    background-color: #fff;
-    color: rgba(47,128,237,0.5);
-}
-
-.nav.nav-pills .nav-item {
-    border-bottom: 1px solid #eee;
-}
-
-.nav-pills .nav-link:first-child {
-    border-radius: 4px 0 0 0;
-}
-
-.nav-pills .nav-link:last-child {
-    border-radius: 0 4px 0 0;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    border-bottom: 2px solid #fff;
-    color: #007bff;
-    background-color: #fff;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    border-bottom: 2px solid #007bff;
-}
 
 
-/* Slider */
 
-.owl-carousel {margin-bottom: 15px;}
 
-.item {
-    display: block;
-}
 
-a.item {color: #212529;}
 
-.item h3 {
-    margin-top: 15px;
-    font-weight: 400;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
-.item img {
-    height: 10rem;
-    background-color: #eee;
-    background-image: url('../img/movietracker-logo-blanco.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    box-shadow: 0 3px 10px #aaa;
-    border-radius: 4px;
-}
 
 .media {
     padding: 10px 0;

@@ -157,29 +157,32 @@
         </div>
 
         <div class="tab-pane fade" id="theatres" role="tabpanel" aria-labelledby="theatres">
-            <div class="container">
+            <div class="buscador">
                 <div class="input-group">
                     <label for="theatresearch" class="sr-only">Buscar por cine</label>
                     <span class="input-group-addon" id="sizing-addon1">Desde</span>
                     <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
                 </div>
             </div>
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="fa fa-car" aria-hidden="true"></i> 15min</a>
+
+            <ul class="option-list">
+                <li>
+                    <span><i class="fa fa-car" aria-hidden="true"></i> 15min</span>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-train" aria-hidden="true"></i> 40min</a>
+                <li>
+                    <span><i class="fa fa-train" aria-hidden="true"></i> 40min</span>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i> 1h 20min</a>
+                <li>
+                    <span><i class="fa fa-male" aria-hidden="true"></i> 1h 20min</span>
                 </li>
             </ul>
 
             <div class="map" id="mapid"></div>
 
-            <div class="container">
-                <h2><i class="fa fa-map-marker" aria-hidden="true"></i> ¡Encontramos 7 cines cercanos!</h2>
+            <div class="container listado">
+                <h2 class="founded-title">
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> ¡Encontramos <strong>7</strong> cines cercanos!
+                </h2>
                 <hr>
                 <div class="resultados">
                     <a href="cine.html" class="media">

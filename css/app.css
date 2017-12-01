@@ -20,6 +20,13 @@ h6 {font-size: 0.75rem;}
     padding-bottom: 15px;
 }
 
+hr {
+    border: 0;
+    height: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 /*------------------------ INPUTS ------------------------*/
 .form-control {
     color: #000;
@@ -111,7 +118,7 @@ h6 {font-size: 0.75rem;}
         box-shadow: 0px 1px 10px #444;
         position: sticky;
         top: 62px;
-        z-index: 9;
+        z-index: 1020;
     }
 
         .nav-pills .nav-item {
@@ -184,16 +191,117 @@ h6 {font-size: 0.75rem;}
             max-width: 120px;
         }
 
+/*------------------------ BUSCAR POR CINE ------------------------*/
 
+    .founded-title {
+        font-size: 15px;
+        font-weight: 600;
+    }
 
+        .founded-title .fa {
+            color: #828282;
+        }
 
+/*------------------------ MAPA ------------------------*/
 
+    .map {
+        width: 100vw;
+        height: 255px;
+        margin-bottom: 15px;
+        display: block;
+    }
 
+    .option-list {
+        list-style: none;
+        padding: 0 15px 10px;
+        margin: 0;
+        color: #828282;
+        background-color: #fff;
 
+    }
 
+        .option-list li {
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+        }
 
+/*------------------------ LISTADOS ------------------------*/
 
+.listado {
+    background-color: #fff;
+    padding-top: 15px;
+}
 
+.media {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.media img {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 4PX;
+    background-color: #eee;
+    background-image: url('../img/movietracker-logo-blanco.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    margin-top: .2rem;
+}
+
+a.media {
+    color: #212529;
+}
+
+a.media:after {
+    content: '\f105';
+    width: 12px;
+    font-family: FontAwesome;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 27px;
+    color: #ccc;
+}
+
+.media-body {
+    margin-top: 0.5rem;
+}
+
+.media-body h5 {
+    margin-bottom: 0.2rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.media-body p {
+    width: 75%;
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: 21%;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.badge.badge-secondary {
+    background-color: transparent;
+    color: inherit;
+}
 
 
 
@@ -262,75 +370,8 @@ h6 {font-size: 0.75rem;}
 
 
 
-.media {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    position: relative;
-}
 
-.media img {
-    width: 48px;
-    height: 48px;
-    border: 1px solid #eee;
-    background-color: #eee;
-    background-image: url('../img/movietracker-logo-blanco.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    margin-top: .2rem;
-}
 
-a.media {
-    color: #212529;
-}
-
-a.media:after {
-    content: '\f105';
-    width: 12px;
-    font-family: FontAwesome;
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    top: 27px;
-    color: #ccc;
-}
-
-.media-body {
-    margin-top: 0.5rem;
-}
-
-.media-body h5 {
-    margin-bottom: 0;
-}
-
-.media-body p {
-    width: 75%;
-    font-size: 0.75rem;
-    margin-bottom: 0.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.badge {
-    position: absolute;
-    right: 0;
-    top: 21%;
-    font-size: .85rem;
-    font-weight: 600;
-}
-
-.badge.badge-secondary {
-    background-color: transparent;
-    color: inherit;
-}
-
-.map {
-    width: 100vw;
-    height: 255px;
-    margin-bottom: 15px;
-    display: block;
-}
 
 .fanart {
     position: relative;

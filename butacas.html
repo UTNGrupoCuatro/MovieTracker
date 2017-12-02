@@ -32,53 +32,57 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="detalle-seleccion">
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-film" aria-hidden="true"></i>
-                    <span class="sr-only">Película: </span>
-                </div>
-                <div class="col-11">
-                    <h2>La liga de la justicia</h2>
-                    <small>Subtitulada 2D</small>
-                </div>
-                <div class="col-12">
-                    <div class="text-center">
-                        <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    <div class="butacas">
+        <div class="listado">
+            <div class="container detalle-seleccion">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-film" aria-hidden="true"></i>
+                        <span class="sr-only">Película: </span>
                     </div>
-                    <div class="collapse" id="collapseExample">
-                        <div class="seleccion">
-                            <div class="detalle-seleccion">
-                                <div class="row">
-                                    <div class="col-1">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span class="sr-only">Cine: </span>
-                                    </div>
-                                    <div class="col-11">
-                                        <h2>Hoyts Abasto</h2>
-                                        <small>Av. Corrientes 3247, CABA</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detalle-seleccion">
-                                <div class="row">
-                                    <div class="col-1">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <span class="sr-only">Fecha: </span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="fecha">
-                                            sábado 20/11
+                    <div class="col-11">
+                        <h2>La liga de la justicia</h2>
+                        <small>Subtitulada 2D</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="collapse" id="collapseExample">
+                            <div class="seleccion">
+                                <div class="detalle-seleccion">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <span class="sr-only">Cine: </span>
+                                        </div>
+                                        <div class="col-11">
+                                            <h2>Hoyts Abasto</h2>
+                                            <small>Av. Corrientes 3247, CABA</small>
                                         </div>
                                     </div>
-                                    <div class="col-1">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span class="sr-only">Horario: </span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="horario">
-                                            21:15
+                                </div>
+                                <div class="detalle-seleccion">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span class="sr-only">Fecha: </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="fecha">
+                                                sábado 20/11
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span class="sr-only">Horario: </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="horario">
+                                                21:15
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -89,22 +93,28 @@
             </div>
         </div>
 
-        <div class="detalle-seleccion">
+        <!-- Valor de las entradas -->
+        <div class="container container-title">
             <div class="row">
                 <div class="col-1">
                     <i class="fa fa-ticket" aria-hidden="true"></i>
                 </div>
-                <div class="col-8">
-                    <h3>Valor de cada entrada:</h3>
-                    <small>Sin beneficio aplicado</small>
-                </div>
-                <div class="col-3 text-right">
-                    <strong>$160</strong>
+                <div class="col-11">
+                    <h3>Valor de cada entrada</h3>
                 </div>
             </div>
         </div>
 
-        <div class="elegir-butacas">
+        <!-- Valor con o sin beneficio -->
+        <div class="container listado">
+            <div class="row">
+                <div class="col-9">
+                    <span>Sin beneficio aplicado</span>
+                </div>
+                <div class="col-3">
+                    <strong class="precio">$160</strong>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="p-3 mb-2 bg-info text-dark">
@@ -112,24 +122,29 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <hr>
+        <div class="container container-title">
+            <label for="inputState">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-braille" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3>Elegir butacas:</h3>
+                    </div>
+                </div>
+            </label>
+        </div>
 
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-braille" aria-hidden="true"></i>
-                </div>
-                <div class="col-11">
-                    <h3>Elegir butacas:</h3>
-                </div>
-            </div>
+        <div class="container elegir-butacas">
 
             <div class="row">
                 <div class="col ocupado">
-                    <i class="fa fa-square-o" aria-hidden="true"></i> <span>Ocupado</span>
+                    <i class="fa fa-square" aria-hidden="true"></i> <span>Ocupado</span>
                 </div>
                 <div class="col disponible">
-                    <i class="fa fa-square" aria-hidden="true"></i> <span>Disponible</span>
+                    <i class="fa fa-square-o" aria-hidden="true"></i> <span>Disponible</span>
                 </div>
                 <div class="col seleccionado">
                     <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado</span>
@@ -737,22 +752,23 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
 
-        <div class="elegir-butacas">
-            <h3>Tu elección de butacas</h3>
-            <hr>
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-braille" aria-hidden="true"></i>
-                </div>
-                <div class="col-11">
-                    <p>20 y 21. Fila 3. <strong>Sala 1</strong></p>
+
+            <div class="elegir-butacas">
+                <h3>Tu elección de butacas</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-braille" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>20 y 21. Fila 3. <strong>Sala 1</strong></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <a class="btn btn-primary btn-block" href="checkout.html">Comprar entradas</a>
+            <a class="btn btn-primary btn-block" href="ingresar.html">Comprar entradas</a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

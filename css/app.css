@@ -24,7 +24,7 @@ hr {
     border: 0;
     height: 0;
     margin-bottom: 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 /*------------------------ INPUTS ------------------------*/
@@ -294,7 +294,7 @@ a.media:after {
     position: absolute;
     right: 0;
     top: 21%;
-    font-size: .85rem;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -351,13 +351,14 @@ a.media:after {
     line-height: 19px;
 }
 
-.btn-collapse {
+a[data-toggle="collapse"] {
     position: relative;
-    margin: 0 auto 20px;
+    float: right;
 }
 
 .fecha {
 	font-size: 15px;
+    padding-top: 15px;
 	font-weight: 600;
 	color: #000000;
 }
@@ -370,6 +371,14 @@ a.media:after {
     padding: 15px;
     background-color: #fff;
     margin-bottom: 35px;
+    position: relative;
+}
+
+.seleccionar-fecha i {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #2f80ed;
 }
 
 .seleccionar-fecha .card {
@@ -395,7 +404,65 @@ a.media:after {
 }
 
 
+.detalle-container {
+    margin-top: -15px;
+    background-color: #fff;
+    padding-top: 15px;
+}
 
+.detalle-seleccion h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.detalle-seleccion small {
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 0.2rem;
+}
+
+.detalle-seleccion .fecha {
+    padding-top: 0;
+    font-weight: 500;
+}
+
+.container-title {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.container-title label {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.container-title .fa {
+    color: #828282;
+}
+
+.container.botones {
+    padding-top: 30px;
+}
+
+.seleccion h3 {
+    font-size: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.seleccion span {
+    font-size: 15px;
+    color: #000;
+}
+
+.seleccion .precio {
+    font-size: 17px;
+    color: #000;
+}
 
 
 
@@ -423,18 +490,42 @@ a.media:after {
 
 
 .form-check {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0;
+    padding: 15px 0;
+}
+
+.form-check:first-child {
+    padding: 0 0 15px;
 }
 
 .form-check:last-child {
     border-bottom: none;
+    padding: 15px 0 0;
 }
 
-.form-check h4 {margin: 0;}
+.form-check h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.form-check-label .info {
+    font-size: 13px;
+}
+
+.form-check-label .info strong {
+    font-weight: 600;
+}
 
 .form-check-label .info,
 .form-check-label .info .fa{
     color: #56CCF2;
+}
+
+.form-check .badge {
+    //top: -9%;
 }
 
 
@@ -499,7 +590,7 @@ a.media:after {
 
 .detalle-seleccion .fa,
 .elegir-butacas .fa {
-    color: #215AA6;
+    color: #828282;
 }
 
 .elegir-butacas span {

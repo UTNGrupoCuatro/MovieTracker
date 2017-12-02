@@ -35,55 +35,74 @@
 
     <!-- Preguntar si no es mejor hacer una lista -->
     <div class="seleccion">
-        <div class="container">
-            <div class="detalle-seleccion">
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa fa-film" aria-hidden="true"></i>
-                        <span class="sr-only">Película: </span>
-                    </div>
-                    <div class="col-11">
-                        <h2>La liga de la justicia</h2>
-                        <small>Subtitulada 2D</small>
-                    </div>
-                </div>
-            </div>
-            <div class="detalle-seleccion">
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span class="sr-only">Cine: </span>
-                    </div>
-                    <div class="col-11">
-                        <h2>Hoyts Abasto</h2>
-                        <small>Av. Corrientes 3247, CABA</small>
-                    </div>
-                </div>
-            </div>
-            <div class="detalle-seleccion">
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <span class="sr-only">Fecha: </span>
-                    </div>
-                    <div class="col-5">
-                        <div class="fecha">
-                            sábado 20/11
+
+        <!-- Datos de la peli -->
+        <div class="detalle-container">
+            <div class="container">
+                <div class="detalle-seleccion">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-film" aria-hidden="true"></i>
+                            <span class="sr-only">Película: </span>
                         </div>
-                    </div>
-                    <div class="col-1">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span class="sr-only">Horario: </span>
-                    </div>
-                    <div class="col-5">
-                        <div class="horario">
-                            21:15
+                        <div class="col-11">
+                            <h2>La liga de la justicia</h2>
+                            <small>Subtitulada 2D</small>
                         </div>
                     </div>
                 </div>
+                <div class="detalle-seleccion">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="sr-only">Cine: </span>
+                        </div>
+                        <div class="col-11">
+                            <h2>Hoyts Abasto</h2>
+                            <small>Av. Corrientes 3247, CABA</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalle-seleccion">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="sr-only">Fecha: </span>
+                        </div>
+                        <div class="col-5">
+                            <div class="fecha">
+                                sábado 20/11
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span class="sr-only">Horario: </span>
+                        </div>
+                        <div class="col-5">
+                            <div class="horario">
+                                21:15
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <label for="inputState">Tarjeta de beneficios</label>
+        </div>
+
+        <!-- Tarjeta de beneficios -->
+        <div class="container container-title">
+            <label for="inputState">
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-11">
+                        <h3>Tarjeta de beneficios</h3>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="container listado">
             <select id="inputState" class="form-control">
                 <option selected>Seleccionar beneficio</option>
                 <option>Club La Nación 2x1</option>
@@ -91,23 +110,34 @@
                 <option>Club Personal 2x1</option>
                 <option>Cablevisión Clientes 2x1</option>
             </select>
-            <div class="detalle-seleccion">
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa fa-ticket" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-8">
-                        <h3>Valor de cada entrada:</h3>
-                        <small>Sin beneficio aplicado</small>
-                    </div>
-                    <div class="col-3 text-right">
-                        <strong>$160</strong>
-                    </div>
-                    <div class="col-12">
-                    </div>
+        </div>
+
+        <!-- Valor de las entradas -->
+        <div class="container container-title">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                    <h3>Valor de cada entrada</h3>
                 </div>
             </div>
-            <hr>
+        </div>
+
+        <!-- Valor con o sin beneficio -->
+        <div class="container listado">
+            <div class="row">
+                <div class="col-9">
+                    <span>Sin beneficio aplicado</span>
+                </div>
+                <div class="col-3">
+                    <strong class="precio">$160</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- botones -->
+        <div class="container botones">
             <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
             <a class="btn btn-outline-primary btn-block" href="como-llegar.html">Como llegar</a>
         </div>

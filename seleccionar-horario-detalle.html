@@ -42,24 +42,21 @@
                 <img src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
             </div>
 
-            <a class="btn btn-primary btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            <div class="collapse" id="collapseExample">
-                <div class="container">
-                    <p>Motivado por su renovada fe en la humanidad e inspirado por el acto abnegado de Superman, Bruce Wayne une fuerzas con su nueva aliada, Diana Prince, para enfrentar a un enemigo más amenazador.</p>
-                    <p><strong>Protagonizada por: </strong> Ben Affleck, Gal Gadot, Henry Cavill<br />
+            <div class="container movie-description">
+                <p>Motivado por su renovada fe en la humanidad e inspirado por el acto abnegado de Superman, Bruce Wayne une fuerzas con su nueva aliada, Diana Prince, para enfrentar a un enemigo más amenazador.</p>
+                <div class="collapse" id="collapseExample">
+                    <p class="cast"><strong>Protagonizada por: </strong> Ben Affleck, Gal Gadot, Henry Cavill<br />
                     <strong>Director: </strong> Zack Snyder<br />
                     <strong>Género: </strong>Comic, Aventuras, Acción </p>
                 </div>
+                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más</a>
             </div>
         </div>
     </div>
-
     <!-- Preguntar si no es mejor hacer una lista -->
-    <div class="seleccion">
+    <div class="detalle-container">
         <div class="container">
-
-
+            <hr>
             <div class="detalle-seleccion">
                 <div class="row">
                     <div class="col-1">
@@ -85,80 +82,104 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <hr>
+    <div class="seleccion">
+        <!-- Horarios -->
+        <div class="container container-title">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                    <h3>Horarios</h3>
+                </div>
+            </div>
+        </div>
 
-            <div class="detalle-seleccion">
+        <div class="container listado">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <h4>Subtitulada 2D</h4>
+                    <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>23</strong> asientos</small>
+                </label>
+                <span class="badge badge-secondary">21:15</span>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <h4>Castellano 2D</h4>
+                    <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>12</strong> asientos</small>
+                </label>
+                <span class="badge badge-secondary">21:45</span>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <h4>Subtitulada 3D</h4>
+                    <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>40</strong> asientos</small>
+                </label>
+                <span class="badge badge-secondary">22:30</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta de beneficios -->
+        <div class="container container-title">
+            <label for="inputState">
                 <div class="row">
                     <div class="col-1">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                     </div>
                     <div class="col-11">
-                        <h3>Horarios</h3>
+                        <h3>Tarjeta de beneficios</h3>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                <h4>Subtitulada 2D</h4>
-                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>23</strong> asientos</small>
-                            </label>
-                            <span class="badge badge-secondary">21:15</span>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <h4>Castellano 2D</h4>
-                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>12</strong> asientos</small>
-                            </label>
-                            <span class="badge badge-secondary">21:45</span>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                <h4>Subtitulada 3D</h4>
-                                <small class="info"><i class="fa fa-info-circle" aria-hidden="true"></i> Quedan <strong>40</strong> asientos</small>
-                            </label>
-                            <span class="badge badge-secondary">22:30</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </label>
+        </div>
 
-            <div class="detalle-seleccion">
-                <label for="inputState">Tarjeta de beneficios</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Seleccionar beneficio</option>
-                    <option>Club La Nación 2x1</option>
-                    <option>Clarin 365 2x1</option>
-                    <option>Club Personal 2x1</option>
-                    <option>Cablevisión Clientes 2x1</option>
-                </select>
-            </div>
+        <div class="container listado">
+            <select id="inputState" class="form-control">
+                <option selected>Seleccionar beneficio</option>
+                <option>Club La Nación 2x1</option>
+                <option>Clarin 365 2x1</option>
+                <option>Club Personal 2x1</option>
+                <option>Cablevisión Clientes 2x1</option>
+            </select>
+        </div>
 
-            <div class="detalle-seleccion">
-                <div class="row">
-                    <div class="col-1">
-                        <i class="fa fa-ticket" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-8">
-                        <h3>Valor de cada entrada:</h3>
-                        <small>Sin beneficio aplicado</small>
-                    </div>
-                    <div class="col-3 text-right">
-                        <strong>$160</strong>
-                    </div>
-                    <div class="col-12">
-                    </div>
+        <!-- Valor de las entradas -->
+        <div class="container container-title">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                    <h3>Valor de cada entrada</h3>
                 </div>
             </div>
-            <hr>
+        </div>
+
+        <!-- Valor con o sin beneficio -->
+        <div class="container listado">
+            <div class="row">
+                <div class="col-9">
+                    <span>Sin beneficio aplicado</span>
+                </div>
+                <div class="col-3">
+                    <strong class="precio">$160</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- botones -->
+        <div class="container botones">
             <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
             <a class="btn btn-outline-primary btn-block" href="como-llegar.html">Como llegar</a>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

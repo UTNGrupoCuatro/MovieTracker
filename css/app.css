@@ -799,3 +799,13 @@ a[data-toggle="collapse"] {
     border-right: 5px solid transparent;
     border-bottom: 10px solid #eefafe;
 }
+
+.info-proximamente {
+    border-radius: 4px;
+	background-color: #eefafe;
+    border: 1px solid #ccf0fb;
+    font-size: 13px;
+    line-height: 17px;
+	color: #000000;
+    padding: 10px;
+}

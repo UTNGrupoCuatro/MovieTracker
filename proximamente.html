@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Movie Tracker</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="https://use.fontawesome.com/a89bf0eb2b.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-  crossorigin=""/>
-  <link rel="stylesheet" href="css/app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a89bf0eb2b.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <nav class="navbar sticky-top navbar-dark bg-primary">
@@ -40,33 +42,29 @@
                 <img src="img/feliz-dia.jpg" alt="Feliz día de tu muerte">
             </div>
 
-            <a class="btn btn-primary btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-
-            <div class="collapse" id="collapseExample">
-                <div class="container">
-                    <p>Una vez más Blumhouse (Fragmentado, Huye, Actividad Paranormal) produce un thriller innovador y original en FELIZ DÍA DE TU MUERTE, donde una estudiante universitaria (Jessica Rothe, La La Land) revive el día en que la mataron múltiples veces hasta descubrir la identidad de su asesino. FELIZ DÍA DE TU MUERTE está dirigida por Christopher LAndom (Actividad Paranormal: Los Marcados).</p>
+            <div class="container movie-description">
+                <p>Una vez más Blumhouse produce un thriller innovador y original en donde una estudiante universitaria revive el día en que la mataron múltiples veces hasta descubrir la identidad de su asesino.</p>
+                <div class="collapse" id="collapseExample">
                     <p><strong>Protagonizada por: </strong> Jessica Rothe, Israel Broussard, Ruby Modine, Rob Mello<br />
                     <strong>Director: </strong> Christopher Landon<br />
                     <strong>Género: </strong>Thriller, Terror</p>
                 </div>
+                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más</a>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-1">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-            </div>
-            <div class="col-11">
-                <p><strong>Fecha de estreno:</strong> sábado 28/11 </p>
-            </div>
-        </div>
+    <div class="container container-title">
+        <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha de estreno:</h2>
+    </div>
 
+    <div class="container listado">
+        <p>Jueves 29/12</p>
+        <p class="info-proximamente">Las entradas se ponen a la venta el <strong>miércoles 28/12</strong>. ¡Te avisamos cuando se pongan a la venta!</p>
+    </div>
 
-        <p><strong>Las entradas se ponen a la venta el miércoles 28/12. ¡Te avisamos cuando se pongan a la venta!</strong></p>
+    <div class="container container-title">
         <a class="btn btn-primary btn-block" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MGpyMmtoZzhqM3RxaTlvOGt0ZGliamlmNnEgbWFoZWVmdnVpazU4bGJsZ3FvZmFhOWtlNmdAZw&tmsrc=maheefvuik58lblgqofaa9ke6g%40group.calendar.google.com" target="_blank">Crear recordatorio</a>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

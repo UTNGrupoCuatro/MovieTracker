@@ -718,7 +718,6 @@ a[data-toggle="collapse"] {
 
 .register .form-control {
     font-size: 15px;
-    color: #828282;
 }
 
 .register span {
@@ -808,4 +807,54 @@ a[data-toggle="collapse"] {
     line-height: 17px;
 	color: #000000;
     padding: 10px;
+}
+
+.img-perfil {
+    width: 92px;
+    margin: 45px auto 10px;
+    display: block;
+}
+
+.nombre-perfil {
+    font-size: 19px;
+	font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.no-logueado .nombre-perfil {
+    color: #b2b2b2;
+}
+
+.logueado .nombre-perfil {
+    color: #000000;
+}
+
+.seccion-perfil {
+    border-top: 1px solid #b2b2b2;
+}
+
+.seccion-perfil a {
+    position: relative;
+    padding: 25px 15px;
+    display: block;
+    font-size: 15px;
+	font-weight: 500;
+	color: #000000;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.logueado .seccion-perfil a:after {
+    position: absolute;
+    content: '\f105';
+    font-family: 'FontAWesome';
+    right: 15px;
+    top: 30%;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.seccion-perfil .fa {
+    color: #828282;
+    padding: 0 20px 0 5px;
 }

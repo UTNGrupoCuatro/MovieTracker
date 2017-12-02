@@ -7,6 +7,10 @@ body {
     background-color: #f2f2f2;
 }
 
+body.white {
+    background-color: #ffffff;
+}
+
 h1, h2, h3, h4, h5, h6 {font-weight: 600;}
 
 h1 {font-size: 1.5rem;}
@@ -25,6 +29,11 @@ hr {
     height: 0;
     margin-bottom: 0;
     border-bottom: 1px solid #f0f0f0;
+}
+
+.btn {
+    font-size: 15px;
+	font-weight: 500;
 }
 
 /*------------------------ INPUTS ------------------------*/
@@ -245,7 +254,7 @@ hr {
     width: 48px;
     height: 48px;
     border: 0;
-    border-radius: 4PX;
+    border-radius: 4px;
     background-color: #eee;
     background-image: url('../img/movietracker-logo-blanco.svg');
     background-repeat: no-repeat;
@@ -356,7 +365,7 @@ a[data-toggle="collapse"] {
     float: right;
 }
 
-.fecha {
+.fecha, .horario, .eleccion-butacas {
 	font-size: 15px;
     padding-top: 15px;
 	font-weight: 600;
@@ -422,7 +431,9 @@ a[data-toggle="collapse"] {
     margin-bottom: 0.2rem;
 }
 
-.detalle-seleccion .fecha {
+.detalle-seleccion .fecha,
+.detalle-seleccion .horario,
+.detalle-seleccion .eleccion-butacas {
     padding-top: 0;
     font-weight: 500;
 }
@@ -445,7 +456,7 @@ a[data-toggle="collapse"] {
     padding-top: 30px;
 }
 
-.seleccion h3 {
+.seleccion h3, .butacas h3, .checkout h3 {
     font-size: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -538,10 +549,38 @@ a[data-toggle="collapse"] {
     padding: 1rem;
 }
 
-
-
 .container-eticket {
     margin-top: 15px;
+}
+
+.container-eticket h2 {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.container-eticket h3 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+.container-eticket p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.container-eticket .btn-group {
+    border-top: 1px solid #e0e0e0;
+}
+
+.container-eticket .btn-group a {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.container-eticket .btn-group a:first-child {
+    border-right: 1px solid #f0f0f0;
 }
 
 
@@ -562,11 +601,15 @@ a[data-toggle="collapse"] {
     margin-top: 45px;
 }
 
+.card.eticket {
+    border-radius: 10px;
+}
+
 .card.eticket:before {
     content: '';
     width: 50px;
     height: 24px;
-    background: #fff;
+    background: #f2f2f2;
     border-bottom: 1px solid rgba(0,0,0,.125);
     border-left: 1px solid rgba(0,0,0,.125);
     border-right: 1px solid rgba(0,0,0,.125);
@@ -579,9 +622,9 @@ a[data-toggle="collapse"] {
     margin: 0 auto;
 }
 
-
-
-
+.elegir-butacas {
+    background-color: #ffffff;
+}
 
 .detalle-seleccion,
 .elegir-butacas {
@@ -598,11 +641,11 @@ a[data-toggle="collapse"] {
 }
 
 .elegir-butacas .ocupado .fa{
-    color: #007bff;
+    color: #ccc;
 }
 
 .elegir-butacas .disponible .fa{
-    color: #ddd;
+    color: #007bff;
 }
 
 .elegir-butacas .seleccionado .fa{
@@ -620,9 +663,9 @@ a[data-toggle="collapse"] {
 
 .table-butacas {
     margin-top: 15px;
-    padding: 1rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    padding: 1rem 0;
+    //border-radius: 4px;
+    //border: 1px solid #ccc;
 }
 
 .screen {
@@ -645,6 +688,9 @@ a[data-toggle="collapse"] {
     height: 1.5rem;
     padding: .25rem;
     left: .25rem;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
@@ -652,13 +698,38 @@ a[data-toggle="collapse"] {
 }
 
 .custom-control-input:disabled~.custom-control-indicator {
-    background-color: transparent;
-    border: 1px solid #007bff;
-    color: #007bff;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #fff;
 }
 
 .login, .register {
     margin-top: 15px;
+}
+
+.register label {
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.register .form-group {
+    margin-bottom: 25px;
+}
+
+.register .form-control {
+    font-size: 15px;
+    color: #828282;
+}
+
+.register span {
+    font-size: 13px;
+	color: #828282;
+}
+
+.form-check-label small {
+    font-size: 13px;
+    line-height: 19px;
+    color: #000;
 }
 
 .footer {
@@ -675,7 +746,17 @@ a[data-toggle="collapse"] {
 .halfway {color: #ccc !important;}
 .far {color: #ccc !important;}*/
 
+.ingresar h2 {
+    font-size: 21px;
+    margin-top: 30px;
+    font-weight: 600;
+}
 
+.ingresar p {
+    font-size: 15px;
+    color: #000;
+    margin-top: 5px;
+}
 
 
 .bg-info {

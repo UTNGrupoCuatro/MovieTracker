@@ -250,6 +250,10 @@ hr {
     position: relative;
 }
 
+.media.disabled {
+    opacity: 0.3;
+}
+
 .media img {
     width: 48px;
     height: 48px;

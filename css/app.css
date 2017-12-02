@@ -356,6 +356,44 @@ a.media:after {
     margin: 0 auto 20px;
 }
 
+.fecha {
+	font-size: 15px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.fecha .fa {
+    color: #828282;
+}
+
+.seleccionar-fecha {
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.seleccionar-fecha .card {
+    padding: 10px 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+	border: solid 1px #e0e0e0;
+    color: #000000;
+    font-size: 15px;
+}
+
+.datepicker {
+    width: 92%;
+    left: 15px !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.listado-cines {
+    background-color: #ffffff;
+}
+
 
 
 
@@ -452,10 +490,7 @@ a.media:after {
 
 
 
-.seleccionar-fecha {
-    margin-bottom: 15px;
-    box-shadow: 0 1px 10px #444;
-}
+
 
 .detalle-seleccion,
 .elegir-butacas {

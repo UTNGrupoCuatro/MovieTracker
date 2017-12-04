@@ -272,15 +272,15 @@
     <script src="js/app.js"></script>
 
     <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    $('a[href="#theatres"]').on('shown.bs.tab', function (e) {
+        var mymap = L.map('mapid').setView([-34.601397, -58.417764], 14);
 
-        L.tileLayer('https://api.mapbox.com/styles/v1/martinmasignano/cjakw0qg3c5cv2spek6i023tu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYWkydHNtZTF0cHMycWxlODcycjJpN3cifQ.0n-1eksPl4JXt67Zr0WhIg', {
-            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             maxZoom: 18,
             id: 'mapbox.streets',
-            accessToken: 'your.mapbox.access.token'
+            accessToken: 'sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYXMyZW51YTFmdDcycW1pb2IyODN1ZmkifQ.ig9w6GjZmBq_y2Me83yfog'
         }).addTo(mymap);
-
+    })
     </script>
 
 </body>

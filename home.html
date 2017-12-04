@@ -280,7 +280,12 @@
             id: 'mapbox.streets',
             accessToken: 'sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYXMyZW51YTFmdDcycW1pb2IyODN1ZmkifQ.ig9w6GjZmBq_y2Me83yfog'
         }).addTo(mymap);
-    })
+
+        L.marker([-34.601397, -58.417764]).addTo(mymap)
+            .bindPopup('Estoy aquí')
+            .openPopup();
+        })
+
     </script>
 
 </body>

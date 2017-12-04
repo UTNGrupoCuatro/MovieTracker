@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Movie Tracker</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/a89bf0eb2b.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -34,7 +39,7 @@
         </ul>
     </nav>
 
-    <div class="map" id="map"></div>
+    <div class="map" id="mapid"></div>
 
     <div class="listado-cines">
         <div class="container">
@@ -57,76 +62,78 @@
         <input type="text" class="form-control" value="Seleccionar"><i class="fa fa-caret-down" aria-hidden="true"></i>
     </div>
 
-    <div class="container">
+    <div class="resultados-visibles">
+      <div class="container">
         <div class="row">
-            <div class="col-1">
-                <i class="fa fa-film" aria-hidden="true"></i>
-            </div>
-            <div class="col-11">
-                <h3>Películas</h3>
-            </div>
+          <div class="col-1">
+            <i class="fa fa-film" aria-hidden="true"></i>
+          </div>
+          <div class="col-11">
+            <h3>Películas</h3>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="container listado">
+      <div class="container listado">
         <div class="resultados">
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
-                <div class="media-body">
-                    <h5 class="mt-0">Liga de la justicia</h5>
-                    <p>Subtitulada 2D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
-                <div class="media-body">
-                    <h5 class="mt-0">Liga de la justicia</h5>
-                    <p>Castellano 2D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
-                <div class="media-body">
-                    <h5 class="mt-0">Liga de la justicia</h5>
-                    <p>Subtitulada 3D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
-                <div class="media-body">
-                    <h5 class="mt-0">Liga de la justicia</h5>
-                    <p>Subtitulada 2D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/estrenos-semana/pelicula-2.jpeg" alt="Thor: Ragnarok">
-                <div class="media-body">
-                    <h5 class="mt-0">Thor: Ragnarok</h5>
-                    <p>Subtitulada 2D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/estrenos-semana/pelicula-3.jpeg" alt="Murder on the Orient Express">
-                <div class="media-body">
-                    <h5 class="mt-0">Murder on the Orient Express</h5>
-                    <p>Castellano 2D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/estrenos-semana/pelicula-4.jpeg" alt="Suburbicon">
-                <div class="media-body">
-                    <h5 class="mt-0">Suburbicon</h5>
-                    <p>Subtitulada 3D</p>
-                </div>
-            </a>
-            <a href="seleccionar-horario-detalle.html" class="media">
-                <img class="mr-3" src="img/estrenos-semana/pelicula-5.jpeg" alt="Kidnap">
-                <div class="media-body">
-                    <h5 class="mt-0">Kidnap</h5>
-                    <p>Subtitulada 2D</p>
-                </div>
-            </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
+            <div class="media-body">
+              <h5 class="mt-0">Liga de la justicia</h5>
+              <p>Subtitulada 2D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
+            <div class="media-body">
+              <h5 class="mt-0">Liga de la justicia</h5>
+              <p>Castellano 2D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
+            <div class="media-body">
+              <h5 class="mt-0">Liga de la justicia</h5>
+              <p>Subtitulada 3D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
+            <div class="media-body">
+              <h5 class="mt-0">Liga de la justicia</h5>
+              <p>Subtitulada 2D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/estrenos-semana/pelicula-2.jpeg" alt="Thor: Ragnarok">
+            <div class="media-body">
+              <h5 class="mt-0">Thor: Ragnarok</h5>
+              <p>Subtitulada 2D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/estrenos-semana/pelicula-3.jpeg" alt="Murder on the Orient Express">
+            <div class="media-body">
+              <h5 class="mt-0">Murder on the Orient Express</h5>
+              <p>Castellano 2D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/estrenos-semana/pelicula-4.jpeg" alt="Suburbicon">
+            <div class="media-body">
+              <h5 class="mt-0">Suburbicon</h5>
+              <p>Subtitulada 3D</p>
+            </div>
+          </a>
+          <a href="seleccionar-horario-detalle.html" class="media">
+            <img class="mr-3" src="img/estrenos-semana/pelicula-5.jpeg" alt="Kidnap">
+            <div class="media-body">
+              <h5 class="mt-0">Kidnap</h5>
+              <p>Subtitulada 2D</p>
+            </div>
+          </a>
         </div>
+      </div>
     </div>
 
 
@@ -163,6 +170,21 @@
             } else {
                 $this.text('Leer menos');
             }
+        });
+
+        var mymap = L.map('mapid').setView([-34.601397, -58.417764], 14);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYXMyZW51YTFmdDcycW1pb2IyODN1ZmkifQ.ig9w6GjZmBq_y2Me83yfog'
+        }).addTo(mymap);
+
+
+        $('.resultados-visibles').css('opacity', '0.3');
+
+        $(".seleccionar-fecha input").focusout(function() {
+            $('.resultados-visibles').css('opacity', '1');
         });
 
     </script>

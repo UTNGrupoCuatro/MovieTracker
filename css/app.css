@@ -124,6 +124,10 @@ hr {
         text-overflow: ellipsis;
     }
 
+    .btn-back {
+        padding: 5px 10px 5px 0;
+    }
+
 /*------------------------ TABS ------------------------*/
 
     .main-nav {

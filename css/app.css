@@ -31,9 +31,11 @@ hr {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.btn {
+.btn-block {
     font-size: 15px;
 	font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 /*------------------------ INPUTS ------------------------*/
@@ -860,4 +862,32 @@ a[data-toggle="collapse"] {
 .seccion-perfil .fa {
     color: #828282;
     padding: 0 20px 0 5px;
+}
+
+.ntc-container .btn {
+    margin-bottom: 15px;
+}
+
+.no-tengo-cuenta {
+    margin-bottom: 30px;
+}
+
+.fb-container {
+    color: #007bff;
+}
+
+.fb-container  p {
+    font-size: 13px;
+}
+
+.bg-facebook {
+    background-color: #3B5998;
+}
+
+.fb-brand {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    margin-top: .5rem;
 }

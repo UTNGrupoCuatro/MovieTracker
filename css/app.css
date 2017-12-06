@@ -128,9 +128,8 @@ hr {
 
     .main-nav {
         margin-bottom: 30px;
-        box-shadow: 0px 1px 10px #444;
+        box-shadow: 0px 5px 5px #ccc;
         top: 62px;
-        z-index: 1020;
     }
 
         .nav-pills .nav-item {

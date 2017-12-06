@@ -41,6 +41,8 @@ hr {
 /*------------------------ INPUTS ------------------------*/
 .form-control {
     color: #000;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 /*------------------------ SPLASH ------------------------*/
@@ -127,7 +129,6 @@ hr {
     .main-nav {
         margin-bottom: 30px;
         box-shadow: 0px 1px 10px #444;
-        position: sticky;
         top: 62px;
         z-index: 1020;
     }
@@ -144,6 +145,7 @@ hr {
                 line-height: 16px;
                 background-color: #fff;
                 color: rgba(47,128,237,0.5);
+                font-weight: 600;
             }
 
 
@@ -173,7 +175,7 @@ hr {
 
     .carousel-title {
         font-size: 15px;
-    	font-weight: 600;
+    	font-weight: 700;
     	color: #000000;
         margin-top: 15px;
     }

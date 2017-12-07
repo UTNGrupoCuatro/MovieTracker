@@ -124,11 +124,15 @@ hr {
         text-overflow: ellipsis;
     }
 
+    .btn-back {
+        padding: 5px 10px 5px 0;
+    }
+
 /*------------------------ TABS ------------------------*/
 
     .main-nav {
         margin-bottom: 30px;
-        box-shadow: 0px 5px 5px #ccc;
+        box-shadow: 0px 2px 5px #444;
         top: 62px;
     }
 
@@ -291,7 +295,7 @@ a.media:after {
 .media-body h5 {
     margin-bottom: 0.2rem;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #000;
 }
 
@@ -310,7 +314,7 @@ a.media:after {
     right: 0;
     top: 21%;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .badge.badge-secondary {
@@ -392,7 +396,7 @@ a[data-toggle="collapse"] {
 .seleccionar-fecha i {
     position: absolute;
     right: 30px;
-    top: 25px;
+    top: 30px;
     color: #2f80ed;
 }
 

@@ -24,7 +24,7 @@
 <body>
     <nav class="navbar sticky-top navbar-dark bg-primary">
 
-        <a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+        <a class="btn-back" href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
 
         <div class="navbar-brand">
             Seleccionar cine
@@ -55,17 +55,17 @@
                     <strong>Director: </strong> Zack Snyder<br />
                     <strong>Género: </strong>Comic, Aventuras, Acción </p>
                 </div>
-                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más</a>
+                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha:</h2>
+    <div class="container container-title">
+        <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha</h2>
     </div>
 
     <div class="seleccionar-fecha">
-        <input type="text" class="form-control" value="Seleccionar"><i class="fa fa-caret-down" aria-hidden="true"></i>
+        <input type="date" class="form-control" value="Seleccionar">
     </div>
 
 
@@ -195,13 +195,13 @@
     <script src="js/app.js"></script>
 
     <script type="text/javascript">
-        $('.seleccionar-fecha input').datepicker({
-            todayHighlight: true,
-            autoclose: true,
-            format: 'DD d/yy',
-            language: 'es',
-            orientation: 'bottom auto'
-        });
+        // $('.seleccionar-fecha input').datepicker({
+        //     todayHighlight: true,
+        //     autoclose: true,
+        //     format: 'DD d/yy',
+        //     language: 'es',
+        //     orientation: 'bottom auto'
+        // });
 
         $('.resultados-visibles').css('opacity', '0.3');
 
@@ -213,16 +213,10 @@
             var $this = $(this);
             $this.toggleClass('btn-collapse');
             if($this.hasClass('btn-collapse')){
-                $this.text('Leer más');
+                $this.html('Leer más <i class="fa fa-angle-down" aria-hidden="true"></i>');
             } else {
-                $this.text('Leer menos');
+                $this.html('Leer menos <i class="fa fa-angle-up" aria-hidden="true"></i>');
             }
-        });
-
-        $('.resultados-visibles').css('opacity', '0.3');
-
-        $(".seleccionar-fecha input").focusout(function() {
-            $('.resultados-visibles').css('opacity', '1');
         });
 
         $('a[href="#cercanias"]').on('shown.bs.tab', function (e) {

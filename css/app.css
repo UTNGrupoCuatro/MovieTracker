@@ -595,8 +595,14 @@ a[data-toggle="collapse"] {
     border-right: 1px solid #f0f0f0;
 }
 
+.container-button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-
+.btn-full-color .fa{
+    color: #007bff !important;
+}
 
 
 
@@ -636,10 +642,10 @@ a[data-toggle="collapse"] {
 
 .elegir-butacas {
     background-color: #ffffff;
+    padding-top: 15px;
 }
 
-.detalle-seleccion,
-.elegir-butacas {
+.detalle-seleccion {
     margin-top: 15px;
 }
 
@@ -674,17 +680,22 @@ a[data-toggle="collapse"] {
 }
 
 .table-butacas {
-    margin-top: 15px;
     padding: 1rem 0;
-    //border-radius: 4px;
-    //border: 1px solid #ccc;
 }
 
 .screen {
     background-color: #eee;
     text-align: center;
     font-size: 75%;
-    margin: 0 .25rem;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    display: block;
+    padding: .25rem 0;
+}
+
+h3.underline {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 15px;
 }
 
 .custom-control {
@@ -905,4 +916,9 @@ a[data-toggle="collapse"] {
 
 .horarios .badge {
     top: 10%;
+}
+
+.advertencia {
+    margin: 15px 0;
+    padding: 10px;
 }

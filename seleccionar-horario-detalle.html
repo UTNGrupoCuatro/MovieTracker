@@ -49,10 +49,11 @@
                     <strong>Director: </strong> Zack Snyder<br />
                     <strong>Género: </strong>Comic, Aventuras, Acción </p>
                 </div>
-                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más</a>
+                <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
+
     <!-- Preguntar si no es mejor hacer una lista -->
     <div class="detalle-container">
         <div class="container">
@@ -165,10 +166,10 @@
         <div class="container listado">
             <div class="row">
                 <div class="col-9">
-                    <span>Sin beneficio aplicado</span>
+                    <span>Con Club La Nación 2x1</span>
                 </div>
-                <div class="col-3">
-                    <strong class="precio">$160</strong>
+                <div class="col-3 text-right">
+                    <strong class="precio">$80</strong>
                 </div>
             </div>
         </div>
@@ -187,5 +188,17 @@
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        $('.btn-collapse').click(function(){
+            var $this = $(this);
+            $this.toggleClass('btn-collapse');
+            if($this.hasClass('btn-collapse')){
+                $this.html('Leer más <i class="fa fa-angle-down" aria-hidden="true"></i>');
+            } else {
+                $this.html('Leer menos <i class="fa fa-angle-up" aria-hidden="true"></i>');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -431,7 +431,7 @@ a[data-toggle="collapse"] {
 
 .detalle-seleccion h2 {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #000;
 }
 
@@ -445,7 +445,7 @@ a[data-toggle="collapse"] {
 .detalle-seleccion .horario,
 .detalle-seleccion .eleccion-butacas {
     padding-top: 0;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .container-title {
@@ -485,7 +485,9 @@ a[data-toggle="collapse"] {
     color: #000;
 }
 
-
+.seleccion .form-control {
+    height: 48px !important;
+}
 
 .input-group .form-control:not(:first-child):not(:last-child),
 .input-group-addon:not(:first-child):not(:last-child),
@@ -895,4 +897,8 @@ a[data-toggle="collapse"] {
     color: #fff;
     font-weight: normal;
     margin-top: .5rem;
+}
+
+.btn-block+.btn-block {
+    margin-top: 15px;
 }

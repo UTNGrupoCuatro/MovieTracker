@@ -902,3 +902,7 @@ a[data-toggle="collapse"] {
 .btn-block+.btn-block {
     margin-top: 15px;
 }
+
+.horarios .badge {
+    top: 10%;
+}

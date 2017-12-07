@@ -369,6 +369,10 @@ a.media:after {
     padding-top: 15px;
 }
 
+.movie-description p {
+    margin-bottom: 0;
+}
+
 .movie-description .cast {
     font-size: 13px;
     line-height: 19px;

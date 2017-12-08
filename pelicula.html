@@ -24,17 +24,23 @@
 <body>
     <nav class="navbar sticky-top navbar-dark bg-primary">
 
-        <a class="btn-back" href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+        <a class="btn-back" href="#" onclick="window.history.go(-1); return false;" aria-label="Volver">
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+        </a>
 
         <div class="navbar-brand">
             Seleccionar cine
         </div>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="home.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+                <a class="nav-link" href="home.html" aria-label="Inicio">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="perfil.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+                <a class="nav-link" href="perfil.html" aria-label="Perfil">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                </a>
             </li>
         </ul>
     </nav>
@@ -45,7 +51,7 @@
                 <div class="container">
                     <h1>Liga de la justicia</h1>
                 </div>
-                <img src="img/la-liga-de-la-justicia.jpg" alt="Liga de la justicia">
+                <img src="img/la-liga-de-la-justicia.jpg" alt="Se ven a los 5 supehéroes de la liga">
             </div>
 
             <div class="container movie-description">
@@ -65,7 +71,8 @@
     </div>
 
     <div class="seleccionar-fecha">
-        <input type="date" class="form-control" value="Seleccionar">
+        <label for="date" class="sr-only">Seleccionar fecha</label>
+        <input type="date" class="form-control" id="date" value="Seleccionar">
     </div>
 
 
@@ -85,7 +92,7 @@
                     <a href="seleccion.html" class="media">
                         <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
                         <div class="media-body">
-                            <h5 class="mt-0">Hoyts Abasto</h5>
+                            <h3 class="mt-0">Hoyts Abasto</h3>
                             <p>Subtitulada 2D</p>
                             <span class="badge badge-secondary">21:15</span>
                         </div>
@@ -93,7 +100,7 @@
                     <a href="seleccion.html" class="media">
                         <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero">
                         <div class="media-body">
-                            <h5 class="mt-0">Cinemark Puerto Madero</h5>
+                            <h3 class="mt-0">Cinemark Puerto Madero</h3>
                             <p>Subtitulada 2D</p>
                             <span class="badge badge-secondary">21:20</span>
                         </div>
@@ -101,7 +108,7 @@
                     <a href="seleccion.html" class="media">
                         <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
                         <div class="media-body">
-                            <h5 class="mt-0">Cinemark Caballito</h5>
+                            <h3 class="mt-0">Cinemark Caballito</h3>
                             <p>Subtitulada 2D</p>
                             <span class="badge badge-secondary">21:35</span>
                         </div>
@@ -109,7 +116,7 @@
                     <a href="seleccion.html" class="media">
                         <img class="mr-3" src="img/logo-village.png" alt="Village Caballito">
                         <div class="media-body">
-                            <h5 class="mt-0">Village Caballito</h5>
+                            <h3 class="mt-0">Village Caballito</h3>
                             <p>Subtitulada 2D</p>
                             <span class="badge badge-secondary">21:50</span>
                         </div>
@@ -126,18 +133,6 @@
                     </div>
                 </div>
 
-                <!-- <ul class="option-list">
-                    <li>
-                        <span><i class="fa fa-car" aria-hidden="true"></i> 15min</span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-train" aria-hidden="true"></i> 40min</span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-male" aria-hidden="true"></i> 1h 20min</span>
-                    </li>
-                </ul> -->
-
                 <div class="map" id="mapid"></div>
 
                 <div class="container listado">
@@ -149,7 +144,7 @@
                         <a href="seleccionar-horario.html" class="media">
                             <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
                             <div class="media-body">
-                                <h5 class="mt-0">Hoyts Abasto</h5>
+                                <h3 class="mt-0">Hoyts Abasto</h3>
                                 <p>Av. Corrientes 3247, CABA</p>
                                 <span class="badge badge-secondary near"><span class="sr-only">A </span> 150mts</span>
                             </div>
@@ -157,7 +152,7 @@
                         <a href="seleccionar-horario.html" class="media">
                             <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito">
                             <div class="media-body">
-                                <h5 class="mt-0">Cinemark Caballito</h5>
+                                <h3 class="mt-0">Cinemark Caballito</h3>
                                 <p>Av. La Plata 80, CABA</p>
                                 <span class="badge badge-secondary halfway"><span class="sr-only">A </span> 1,2km</span>
                             </div>
@@ -165,7 +160,7 @@
                         <a href="seleccionar-horario.html" class="media">
                             <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Pelermo">
                             <div class="media-body">
-                                <h5 class="mt-0">Cinemark Pelermo</h5>
+                                <h3 class="mt-0">Cinemark Pelermo</h3>
                                 <p>Antonio Berutti 3399, CABA</p>
                                 <span class="badge badge-secondary halfway"><span class="sr-only">A </span> 2,6km</span>
                             </div>
@@ -173,7 +168,7 @@
                         <a href="seleccionar-horario.html" class="media">
                             <img class="mr-3" src="img/logo-village.png" alt="Village Cines Caballito">
                             <div class="media-body">
-                                <h5 class="mt-0">Village Cines Caballito</h5>
+                                <h3 class="mt-0">Village Cines Caballito</h3>
                                 <p>Av. Rivadavia 5071, CABA</p>
                                 <span class="badge badge-secondary far"><span class="sr-only">A </span> 4km</span>
                             </div>

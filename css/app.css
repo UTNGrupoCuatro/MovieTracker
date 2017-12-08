@@ -11,6 +11,24 @@ body.white {
     background-color: #ffffff;
 }
 
+.bg-primary {
+    background-color: #0072ee !important;
+}
+
+.btn-link {
+    color: #0072ee;
+}
+
+.btn-primary {
+    background-color: #0072ee;
+    border-color: #0072ee;
+}
+
+.btn-outline-primary {
+    color: #0072ee;
+    border-color: #0072ee;
+}
+
 h1, h2, h3, h4, h5, h6 {font-weight: 600;}
 
 h1 {font-size: 1.5rem;}
@@ -48,7 +66,7 @@ hr {
 /*------------------------ SPLASH ------------------------*/
 
     .mask {
-        background-color: #007bff;
+        background-color: #0072ee;
         width: 100%;
         height: 100%;
         position: fixed;
@@ -609,7 +627,7 @@ a[data-toggle="collapse"] {
 }
 
 .btn-full-color .fa{
-    color: #007bff !important;
+    color: #0072ee !important;
 }
 
 
@@ -671,11 +689,11 @@ a[data-toggle="collapse"] {
 }
 
 .elegir-butacas .disponible .fa{
-    color: #007bff;
+    color: #0072ee;
 }
 
 .elegir-butacas .seleccionado .fa{
-    color: #007bff;
+    color: #0072ee;
 }
 
 .table thead th {
@@ -720,8 +738,8 @@ h3.underline {
     padding: .25rem;
     left: .25rem;
     background-color: transparent;
-    border: 1px solid #007bff;
-    color: #007bff;
+    border: 1px solid #0072ee;
+    color: #0072ee;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-indicator {
@@ -899,7 +917,7 @@ h3.underline {
 }
 
 .fb-container {
-    color: #007bff;
+    color: #0072ee;
 }
 
 .fb-container  p {

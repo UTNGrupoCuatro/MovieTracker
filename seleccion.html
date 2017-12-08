@@ -38,114 +38,116 @@
         </ul>
     </nav>
 
-    <!-- Preguntar si no es mejor hacer una lista -->
-    <div class="seleccion">
+    <main>
+        <!-- Preguntar si no es mejor hacer una lista -->
+        <div class="seleccion">
 
-        <!-- Datos de la peli -->
-        <div class="detalle-container">
-            <div class="container">
-                <div class="detalle-seleccion">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fa fa-film" aria-hidden="true"></i>
-                            <span class="sr-only">Película: </span>
-                        </div>
-                        <div class="col-11">
-                            <h2>La liga de la justicia</h2>
-                            <small>Subtitulada 2D</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="detalle-seleccion">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span class="sr-only">Cine: </span>
-                        </div>
-                        <div class="col-11">
-                            <h2>Hoyts Abasto</h2>
-                            <small>Av. Corrientes 3247, CABA</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="detalle-seleccion">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <span class="sr-only">Fecha: </span>
-                        </div>
-                        <div class="col-5">
-                            <div class="fecha">
-                                Sábado 20/11
+            <!-- Datos de la peli -->
+            <div class="detalle-container">
+                <div class="container">
+                    <div class="detalle-seleccion">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-film" aria-hidden="true"></i>
+                                <span class="sr-only">Película: </span>
+                            </div>
+                            <div class="col-11">
+                                <h2>La liga de la justicia</h2>
+                                <small>Subtitulada 2D</small>
                             </div>
                         </div>
-                        <div class="col-1">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <span class="sr-only">Horario: </span>
+                    </div>
+                    <div class="detalle-seleccion">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span class="sr-only">Cine: </span>
+                            </div>
+                            <div class="col-11">
+                                <h2>Hoyts Abasto</h2>
+                                <small>Av. Corrientes 3247, CABA</small>
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <div class="horario">
-                                21:15
+                    </div>
+                    <div class="detalle-seleccion">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span class="sr-only">Fecha: </span>
+                            </div>
+                            <div class="col-5">
+                                <div class="fecha">
+                                    Sábado 20/11
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="sr-only">Horario: </span>
+                            </div>
+                            <div class="col-5">
+                                <div class="horario">
+                                    21:15
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Tarjeta de beneficios -->
-        <div class="container container-title">
-            <label for="inputState">
+            <!-- Tarjeta de beneficios -->
+            <div class="container container-title">
+                <label for="inputState">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-11">
+                            <h3>Tarjeta de beneficios</h3>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="container listado">
+                <select id="inputState" class="form-control">
+                    <option selected>Club La Nación 2x1</option>
+                    <option>Clarin 365 2x1</option>
+                    <option>Club Personal 2x1</option>
+                    <option>Cablevisión Clientes 2x1</option>
+                </select>
+            </div>
+
+            <!-- Valor de las entradas -->
+            <div class="container container-title">
                 <div class="row">
                     <div class="col-1">
-                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
                     </div>
                     <div class="col-11">
-                        <h3>Tarjeta de beneficios</h3>
+                        <h3>Valor de cada entrada</h3>
                     </div>
                 </div>
-            </label>
-        </div>
+            </div>
 
-        <div class="container listado">
-            <select id="inputState" class="form-control">
-                <option selected>Club La Nación 2x1</option>
-                <option>Clarin 365 2x1</option>
-                <option>Club Personal 2x1</option>
-                <option>Cablevisión Clientes 2x1</option>
-            </select>
-        </div>
-
-        <!-- Valor de las entradas -->
-        <div class="container container-title">
-            <div class="row">
-                <div class="col-1">
-                    <i class="fa fa-ticket" aria-hidden="true"></i>
-                </div>
-                <div class="col-11">
-                    <h3>Valor de cada entrada</h3>
+            <!-- Valor con o sin beneficio -->
+            <div class="container listado">
+                <div class="row">
+                    <div class="col-9">
+                        <span>Con Club La Nación 2x1</span>
+                    </div>
+                    <div class="col-3 text-right">
+                        <strong class="precio">$80</strong>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Valor con o sin beneficio -->
-        <div class="container listado">
-            <div class="row">
-                <div class="col-9">
-                    <span>Con Club La Nación 2x1</span>
-                </div>
-                <div class="col-3 text-right">
-                    <strong class="precio">$80</strong>
-                </div>
+            <!-- botones -->
+            <div class="container botones">
+                <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
+                <a class="btn btn-outline-primary btn-block" href="https://www.google.com.ar/maps/dir/Universidad+Tecnol%C3%B3gica+Nacional+-+Dpto+Ingenier%C3%ADa+Electr%C3%B3nica+-+UTN.BA,+Av.+Medrano+951,+C1190+CABA/Hoyts+Abasto,+Abasto+Shopping,+C1193AAE,+Av.+Corrientes+3247,+1193+CABA/@-34.6013499,-58.4201661,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x95bcca7cd5154d8f:0xceff1f97c5c94a26!2m2!1d-58.4199772!2d-34.5986601!1m5!1m1!1s0x95bcca8c8513598b:0x89b570ec39dc7d88!2m2!1d-58.4108358!2d-34.6034662!3e2?hl=en">Como llegar</a>
             </div>
         </div>
-
-        <!-- botones -->
-        <div class="container botones">
-            <a class="btn btn-primary btn-block" href="butacas.html">Elegir butacas</a>
-            <a class="btn btn-outline-primary btn-block" href="https://www.google.com.ar/maps/dir/Universidad+Tecnol%C3%B3gica+Nacional+-+Dpto+Ingenier%C3%ADa+Electr%C3%B3nica+-+UTN.BA,+Av.+Medrano+951,+C1190+CABA/Hoyts+Abasto,+Abasto+Shopping,+C1193AAE,+Av.+Corrientes+3247,+1193+CABA/@-34.6013499,-58.4201661,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x95bcca7cd5154d8f:0xceff1f97c5c94a26!2m2!1d-58.4199772!2d-34.5986601!1m5!1m1!1s0x95bcca8c8513598b:0x89b570ec39dc7d88!2m2!1d-58.4108358!2d-34.6034662!3e2?hl=en">Como llegar</a>
-        </div>
-    </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

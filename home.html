@@ -35,14 +35,16 @@
         </ul>
     </nav>
 
-    <ul class="nav main-nav nav-pills nav-justified sticky-top" id="myTab" role="menu">
-        <li class="nav-item">
-            <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por<br />película</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por<br />cine cercano</a>
-        </li>
-    </ul>
+    <div class="main-navigation" role="navigation">
+        <ul class="nav main-nav nav-pills nav-justified sticky-top" id="myTab">
+            <li class="nav-item">
+                <a class="nav-link active" id="movie" data-toggle="tab" href="#movies" role="tab" aria-controls="movies" aria-selected="true">Buscar por<br />película</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="theatre" data-toggle="tab" href="#theatres" role="tab" aria-controls="theatres" aria-selected="false">Buscar por<br />cine cercano</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
         <div class="tab-content" id="myTabContent">
@@ -53,7 +55,7 @@
                         <div class="buscador">
                             <div class="input-group">
                                 <label for="moviesearch" class="sr-only" aria-hidden="true">Buscar película...</label>
-                                <input id="moviesearch" type="text" list="pelis" class="form-control" placeholder="Buscar película..." aria-label="Buscar película">
+                                <input id="moviesearch" type="text" list="pelis" class="form-control" placeholder="Buscar película...">
                                 <span class="input-group-btn">
                                     <button class="btn btn-secondary" type="button" aria-label="Buscar">
                                         <i class="fa fa-search" aria-hidden="true"></i>

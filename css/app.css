@@ -375,7 +375,7 @@ a.media:after {
     width: 100%;
 }
 
-.fanart h1 {
+.fanart h2 {
     color: #fff;
     font-size: 21px;
     font-weight: 600;
@@ -750,8 +750,8 @@ h3.underline {
 }
 
 .custom-control-input:disabled~.custom-control-indicator {
-    background-color: #ccc;
-    border: 1px solid #ccc;
+    background-color: #767676;
+    border: 1px solid #767676;
     color: #fff;
 }
 

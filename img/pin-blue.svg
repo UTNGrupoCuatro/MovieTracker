@@ -1,0 +1,12 @@
+<svg width="26" height="40" viewBox="0 0 26 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Pin azul</title>
+<desc>Movie Tracker</desc>
+<g id="Canvas" transform="translate(-474 -2894)">
+<g id="XMLID 35">
+<use xlink:href="#path0_fill" transform="translate(474 2894)" fill="#0072EE"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 13.0003 0C 5.83223 0 0 5.72898 0 12.7709C 0 15.0015 0.60495 17.2081 1.73018 19.1159L 12.2899 39.3859C 12.4259 39.6476 12.7001 39.8125 13.0003 39.8125C 13.2995 39.8125 13.5734 39.6476 13.7101 39.3859L 24.2508 19.1516C 25.3954 17.2081 26 15.0015 26 12.7709C 26 5.72898 20.1685 0 13.0003 0Z"/>
+</defs>
+</svg>

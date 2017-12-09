@@ -972,3 +972,7 @@ h3.underline {
 .leaflet-container a.leaflet-popup-close-button {
     color: #626262;
 }
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    border: 1px solid #0072ee;
+}

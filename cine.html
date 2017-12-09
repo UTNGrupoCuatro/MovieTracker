@@ -30,7 +30,7 @@
 
         <h1 class="navbar-brand">Seleccionar película</h1>
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" role="menu">
             <li class="nav-item">
                 <a class="nav-link" href="home.html" aria-label="Inicio">
                     <i class="fa fa-home fa-2x" aria-hidden="true"></i>
@@ -46,13 +46,17 @@
 
     <main>
         <ul class="option-list">
+            <span class="sr-only">Distancias:</span>
             <li>
+                <span class="sr-only">En auto</span>
                 <span><i class="fa fa-car" aria-hidden="true"></i> 15min</span>
             </li>
             <li>
+                <span class="sr-only"> En tren</span>
                 <span><i class="fa fa-train" aria-hidden="true"></i> 40min</span>
             </li>
             <li>
+                <span class="sr-only">Caminando</span>
                 <span><i class="fa fa-male" aria-hidden="true"></i> 1h 20min</span>
             </li>
         </ul>
@@ -61,12 +65,12 @@
 
         <div class="listado-cines">
             <div class="container">
-                <div class="media nl">
-                    <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto">
-                    <div class="media-body">
+                <div class="media nl" aria-label="Hoyts Abasto. Avenida Corrientes 3247, CABA. A 1,2 kilómetros">
+                    <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
+                    <div class="media-body" aria-hidden="true">
                         <h2 class="mt-0">Hoyts Abasto</h2>
                         <p>Av. Corrientes 3247, CABA</p>
-                        <span class="badge badge-secondary halfway"><span class="sr-only">A </span> 1,2km</span>
+                        <span class="badge badge-secondary">A </span> 1,2km</span>
                     </div>
                 </div>
             </div>

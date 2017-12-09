@@ -48,7 +48,7 @@
                             <span class="sr-only">Película: </span>
                         </div>
                         <div class="col-11">
-                            <h2>La liga de la justicia</h2>
+                            <h2>Liga de la justicia</h2>
                             <small>Subtitulada 2D</small>
                         </div>
                     </div>
@@ -76,8 +76,8 @@
                                                 <span class="sr-only">Fecha: </span>
                                             </div>
                                             <div class="col-5">
-                                                <div class="fecha">
-                                                    sábado 20/11
+                                                <div class="fecha" aria-label="Sábado 28 de noviembre.">
+                                                    Sábado 28/11
                                                 </div>
                                             </div>
                                             <div class="col-1">
@@ -86,7 +86,7 @@
                                             </div>
                                             <div class="col-5">
                                                 <div class="horario">
-                                                    21:15
+                                                    21:15 <span class="sr-only">horas</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,10 +116,10 @@
             <div class="container listado">
                 <div class="row">
                     <div class="col-9">
-                        <span>Con Club La Nación 2x1</span>
+                        <span aria-label="Club la Nación 2 por 1">Con Club La Nación 2x1</span>
                     </div>
                     <div class="col-3 text-right">
-                        <strong class="precio">$80</strong>
+                        <strong class="precio" aria-label="80 pesos">$80</strong>
                     </div>
                 </div>
                 <div class="row">
@@ -148,13 +148,13 @@
 
                 <div class="row">
                     <div class="col ocupado">
-                        <i class="fa fa-square" aria-hidden="true"></i> <span>Ocupado</span>
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Ocupado <span class="sr-only">Se muestran las butacas de color gris oscuro</span></span>
                     </div>
                     <div class="col disponible">
-                        <i class="fa fa-square-o" aria-hidden="true"></i> <span>Disponible</span>
+                        <i class="fa fa-square-o" aria-hidden="true"></i> <span>Disponible <span class="sr-only">Se muestran las butacas de color blanco con borde azul</span></span>
                     </div>
                     <div class="col seleccionado">
-                        <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado</span>
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado <span class="sr-only">Se muestran las butacas de color azul</span></span>
                     </div>
                 </div>
 
@@ -166,14 +166,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">
-                                <label class="custom-control custom-checkbox">
+                            <th scope="row" aria-label="Butaca A1">
+                                <label class="custom-control custom-checkbox" aria-hidden="true">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A1</span>
                                 </label>
                             </th>
-                            <td>
-                                <label class="custom-control custom-checkbox">
+                            <td aria-label="A2">
+                                <label class="custom-control custom-checkbox" aria-hidden="true">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator">A2</span>
                                 </label>

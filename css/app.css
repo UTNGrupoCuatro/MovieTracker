@@ -166,7 +166,9 @@ select {
             border-bottom: 0;
         }
 
-            .nav-pills .nav-item .nav-link {
+            .nav-pills .nav-item.nav-link,
+            .nav-pills .nav-link.active,
+            .nav-pills .show>.nav-link {
                 border-radius: 0;
                 border-bottom: 1px solid #e0e0e0;
                 height: 100%;
@@ -182,7 +184,7 @@ select {
             border-right: 1px solid #f0f0f0;
         }
 
-        .nav-pills .nav-item .nav-link.active,
+        .nav-pills .nav-item.nav-link.active,
         .nav-pills .show>.nav-link {
             border-bottom: 2px solid #0078d3;
             color: #0078d3;

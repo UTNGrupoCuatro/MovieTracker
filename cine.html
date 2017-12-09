@@ -169,13 +169,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
-        // $('.seleccionar-fecha input').datepicker({
-        //     todayHighlight: true,
-        //     autoclose: true,
-        //     format: 'DD d/yy',
-        //     language: 'es',
-        //     orientation: 'bottom auto'
-        // });
 
         $('.resultados-visibles').css('opacity', '0.3');
 
@@ -201,9 +194,7 @@
             accessToken: 'sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYXMyZW51YTFmdDcycW1pb2IyODN1ZmkifQ.ig9w6GjZmBq_y2Me83yfog'
         }).addTo(mymap);
 
-        L.marker([-34.603587, -58.410666]).addTo(mymap)
-            .bindPopup('Hoyts Abasto')
-            .openPopup();
+        L.marker([-34.603587, -58.410666]).addTo(mymap).bindPopup('Hoyts Abasto').openPopup();
 
         $('.resultados-visibles').css('opacity', '0.3');
 

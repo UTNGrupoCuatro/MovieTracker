@@ -176,7 +176,7 @@ hr {
 
         .nav-pills .nav-item .nav-link.active,
         .nav-pills .show>.nav-link {
-            border-bottom: 2px solid #;
+            border-bottom: 2px solid #0078d3;
             color: #0078d3;
         }
 
@@ -314,7 +314,9 @@ a.media:after {
     margin-top: 0.5rem;
 }
 
-.media-body h3 {
+.media-body h2,
+.media-body h3,
+.media-body h4 {
     margin-bottom: 0.2rem;
     font-size: 15px;
     font-weight: 600;
@@ -373,7 +375,7 @@ a.media:after {
     width: 100%;
 }
 
-.fanart h1 {
+.fanart h2 {
     color: #fff;
     font-size: 21px;
     font-weight: 600;
@@ -748,8 +750,8 @@ h3.underline {
 }
 
 .custom-control-input:disabled~.custom-control-indicator {
-    background-color: #ccc;
-    border: 1px solid #ccc;
+    background-color: #767676;
+    border: 1px solid #767676;
     color: #fff;
 }
 

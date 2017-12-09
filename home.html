@@ -221,7 +221,7 @@
                                 <i class="fa fa-angle-right"></i>
                             </div>
                         </a>
-                        <a href="cine.html" class="media" aria-label="Villages Cines Caballito. Av. Rivadavia 5071, CABA. A 3,2 kilómetros">
+                        <a href="cine.html" class="media" aria-label="Village Cines Caballito. Av. Rivadavia 5071, CABA. A 3,2 kilómetros">
                             <img class="mr-3" src="img/logo-village.png" alt="Villages Cines Caballito" aria-hidden="true">
                             <div class="media-body" aria-hidden="true">
                                 <h3 class="mt-0">Villages Cines Caballito</h3>
@@ -248,15 +248,6 @@
                                 <i class="fa fa-angle-right"></i>
                             </div>
                         </a>
-                        <!-- <a href="cine.html" class="media" aria-label="Cinemark Puerto Madero. Av. Alicia Moreau de Justo 1920, CABA. A 7,4 kilómetros">
-                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero" aria-hidden="true">
-                            <div class="media-body" aria-hidden="true">
-                                <h3 class="mt-0">Cinemark Puerto Madero</h3>
-                                <p>Av. Alicia Moreau de Justo 1920, CABA</p>
-                                <span class="badge badge-secondary">7,4km</span>
-                                <i class="fa fa-angle-right"></i>
-                            </div>
-                        </a> -->
                     </div>
                 </div>
             </div>
@@ -283,32 +274,25 @@
             accessToken: 'sk.eyJ1IjoibWFydGlubWFzaWduYW5vIiwiYSI6ImNqYXMyZW51YTFmdDcycW1pb2IyODN1ZmkifQ.ig9w6GjZmBq_y2Me83yfog'
         }).addTo(mymap);
 
-        function onLocationFound(e) {
-            var radius = e.accuracy / 2;
-
-            L.marker(e.latlng).addTo(mymap)
-                .bindPopup("Estas a " + radius + " metros de este punto").openPopup();
-
-            L.circle(e.latlng, radius).addTo(mymap);
-        }
-
-        mymap.on('locationfound', onLocationFound);
-
     	var LeafIcon = L.Icon.extend({
     		options: {
-    			iconSize:     [20, 35],
-    			iconAnchor:   [22, 94],
-    			popupAnchor:  [-3, -76]
+    			iconSize:     [15, 27],
+    			iconAnchor:   [0, 27],
+    			popupAnchor:  [-3, -27]
     		}
     	});
 
     	var blueIcon = new LeafIcon({iconUrl: 'img/pin-blue.svg'}),
-    		redIcon = new LeafIcon({iconUrl: 'img/pin-red.svg'});
+    		redIcon = new LeafIcon({iconUrl: 'img/pin-red.svg'}),
+            hereIcon = new LeafIcon({iconUrl: 'img/circle-blue.svg'});
 
-    	//L.marker([-34.601397, -58.417764], {icon: blueIcon}).bindPopup("Estoy aquí.").openPopup().addTo(mymap);
+    	L.marker([-34.601397, -58.417764], {icon: hereIcon}).bindPopup("Estoy aquí.").openPopup().addTo(mymap);
     	L.marker([-34.603188, -58.410863], {icon: redIcon}).bindPopup("Hoyts Abasto. <br> Av. Corrientes 3247. CABA").openPopup().addTo(mymap);
-    	L.marker([-34.616099, -58.428778], {icon: redIcon}).bindPopup("Cinemark Caballito. <br> Av. La Plata 80. CABA").openPopup().addTo(mymap);
-    	L.marker([-34.586177, -58.410333], {icon: redIcon}).bindPopup("Cinemark Palermo. <br> Antonio Beruti 3399. CABA").openPopup().addTo(mymap);
+    	L.marker([-34.616099, -58.428778], {icon: blueIcon}).bindPopup("Cinemark Caballito. <br> Av. La Plata 80. CABA").openPopup().addTo(mymap);
+    	L.marker([-34.586177, -58.410333], {icon: blueIcon}).bindPopup("Cinemark Palermo. <br> Antonio Beruti 3399. CABA").openPopup().addTo(mymap);
+    	L.marker([-34.618137, -58.437518], {icon: blueIcon}).bindPopup("Village Cines Caballito. <br> Avenida Rivadavia 5071. CABA").openPopup().addTo(mymap);
+    	L.marker([-34.588977, -58.393849], {icon: blueIcon}).bindPopup("Village Recoleta. <br> Vicente López 2050. CABA").openPopup().addTo(mymap);
+    	L.marker([-34.618137, -58.437518], {icon: blueIcon}).bindPopup("Cine Gaumont. <br> Avenida Rivadavia 1635. CABA").openPopup().addTo(mymap);
     })
 
     </script>

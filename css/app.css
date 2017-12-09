@@ -53,6 +53,10 @@ hr {
     border-bottom: 1px solid #f0f0f0;
 }
 
+select {
+    height: 48px !important;
+}
+
 .btn-block {
     font-size: 15px;
 	font-weight: 500;
@@ -317,7 +321,7 @@ a.media {
 a.media .fa {
     position: absolute;
     font-size: 24px;
-    right: 3px;
+    right: 5px;
     top: 33px;
     color: #ccc;
 }
@@ -413,6 +417,56 @@ a.media .fa {
 a[data-toggle="collapse"] {
     position: relative;
     float: right;
+}
+
+a[data-toggle="collapse"].horarios {
+    float: left;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+}
+
+a[data-toggle="collapse"].horarios .fa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-body {
+    background-color: #f2f2f2;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.card-body a {
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-body .fa {
+    right: 15px !important;
+}
+
+.hora {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
 }
 
 .fecha, .horario, .eleccion-butacas {

@@ -70,10 +70,21 @@
                 <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha</h2>
             </div>
 
-            <div class="seleccionar-fecha">
+            <!-- Fecha -->
+            <div class="container listado">
                 <label for="date" class="sr-only">Seleccionar fecha</label>
-                <input type="date" class="form-control" id="date" value="Seleccionar">
+                <select id="inputState" class="form-control">
+                    <option selected aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                    <option aria-label="Jueves 26 de Noviembre">Jueves 26/11</option>
+                    <option aria-label="Viernes 27 de Noviembre">Viernes 27/11</option>
+                    <option aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                    <option aria-label="Domingo 29 de Noviembre">Domingo 29/11</option>
+                    <option aria-label="Lunes 30 de Noviembre">Lunes 30/11</option>
+                    <option aria-label="Martes 1 de Diciembre">Martes 1/12</option>
+                    <option aria-label="Miércoles 2 de Diciembre">Miércoles 2/12</option>
+                </select>
             </div>
+
 
             <div class="resultados-visibles">
                 <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
@@ -87,39 +98,98 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="horarios" role="tabpanel" aria-labelledby="horario">
-                        <div class="container listado-cines">
-                            <a href="seleccion.html" class="media" aria-label="Hoyts Abasto. Subtitulada 2D. A las 21:15 horas">
-                                <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
-                                <div class="media-body" aria-hidden="true">
-                                    <h3 class="mt-0">Hoyts Abasto</h3>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:15</span>
+                        <div id="accordion" role="tablist">
+
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingThree">
+                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        21:00 <span class="sr-only">horas</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="seleccion.html" class="media" aria-label="Cinemark Puerto Madero. Subtitulada 2D. 21:20 horas">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero" aria-hidden="true">
-                                <div class="media-body" aria-hidden="true">
-                                    <h3 class="mt-0">Cinemark Puerto Madero</h3>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:20</span>
+                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container container-title">
+                                            <h3 class="hora">21:15 <span class="sr-only">horas</span></h3>
+                                        </div>
+                                        <a href="seleccion.html" class="media" aria-label="Hoyts Abasto. Subtitulada 2D.">
+                                            <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
+                                            <div class="media-body" aria-hidden="true">
+                                                <h3 class="mt-0">Hoyts Abasto</h3>
+                                                <p>Subtitulada 2D</p>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                        <a href="seleccion.html" class="media" aria-label="Cinemark Puerto Madero. Subtitulada 2D.">
+                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero" aria-hidden="true">
+                                            <div class="media-body" aria-hidden="true">
+                                                <h3 class="mt-0">Cinemark Puerto Madero</h3>
+                                                <p>Subtitulada 2D</p>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                        <div class="container container-title">
+                                            <h3 class="hora">21:35 <span class="sr-only">horas</span></h3>
+                                        </div>
+                                        <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
+                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
+                                            <div class="media-body" aria-hidden="true">
+                                                <h3 class="mt-0">Cinemark Caballito</h3>
+                                                <p>Subtitulada 2D</p>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D. A las 21:35 horas">
-                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
-                                <div class="media-body" aria-hidden="true">
-                                    <h3 class="mt-0">Cinemark Caballito</h3>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:35</span>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingFour">
+                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        22:00 <span class="sr-only">horas</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="seleccion.html" class="media" aria-label="Village Caballito. Subtitulada 2D. A las 21:50 horas">
-                                <img class="mr-3" src="img/logo-village.png" alt="Village Caballito" aria-hidden="true">
-                                <div class="media-body" aria-hidden="true">
-                                    <h3 class="mt-0">Village Caballito</h3>
-                                    <p>Subtitulada 2D</p>
-                                    <span class="badge badge-secondary">21:50</span>
+                                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container container-title">
+                                            <h3 class="hora">22:10 <span class="sr-only">horas</span></h3>
+                                        </div>
+                                        <a href="seleccion.html" class="media" aria-label="Village Caballito. Subtitulada 2D.">
+                                            <img class="mr-3" src="img/logo-village.png" alt="Village Caballito" aria-hidden="true">
+                                            <div class="media-body" aria-hidden="true">
+                                                <h3 class="mt-0">Village Caballito</h3>
+                                                <p>Subtitulada 2D</p>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingFive">
+                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        23:00 <span class="sr-only">horas</span>
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container container-title">
+                                            <h3 class="hora">23:45 <span class="sr-only">horas</span></h3>
+                                        </div>
+                                        <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
+                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
+                                            <div class="media-body" aria-hidden="true">
+                                                <h3 class="mt-0">Cinemark Caballito</h3>
+                                                <p>Subtitulada 2D</p>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -190,17 +260,10 @@
     <script src="js/app.js"></script>
 
     <script type="text/javascript">
-        // $('.seleccionar-fecha input').datepicker({
-        //     todayHighlight: true,
-        //     autoclose: true,
-        //     format: 'DD d/yy',
-        //     language: 'es',
-        //     orientation: 'bottom auto'
-        // });
 
         $('.resultados-visibles').css('opacity', '0.3');
 
-        $(".seleccionar-fecha input").focusout(function() {
+        $(".listado select").focusout(function() {
             $('.resultados-visibles').css('opacity', '1');
         });
 

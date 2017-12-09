@@ -51,198 +51,198 @@
                     <div class="container">
                         <h2>Liga de la justicia</h2>
                     </div>
-                    <img src="img/la-liga-de-la-justicia.jpg" alt="Se ven a los 5 supehéroes de la liga">
+                    <img src="img/la-liga-de-la-justicia.jpg" alt="Se ve a los 5 superhéroes de la liga">
                 </div>
 
                 <div class="container movie-description">
                     <p>Motivado por su renovada fe en la humanidad e inspirado por el acto abnegado de <span lang="en">Superman</span>, <span lang="en">Bruce Wayne</span> une fuerzas con su nueva aliada, <span lang="en">Diana Prince</span>, para enfrentar a un enemigo más amenazador.</p>
                     <div class="collapse" id="collapseExample">
-                        <p class="cast"><strong>Protagonizada por: </strong> <span lang="en">Ben Affleck, Gal Gadot, Henry Cavill</span><br />
-                            <strong>Director: </strong> <span lang="en">Zack Snyder</span><br />
-                            <strong>Género: </strong>Comic, Aventuras, Acción </p>
-                        </div>
-                        <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <p class="cast">
+                        <strong>Protagonizada por: </strong> <span lang="en">Ben Affleck, Gal Gadot, Henry Cavill</span><br />
+                        <strong>Director: </strong> <span lang="en">Zack Snyder</span><br />
+                        <strong>Género: </strong>Comic, Aventuras, Acción </p>
                     </div>
+                    <a class="btn btn-link btn-collapse" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Leer más <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </div>
+        </div>
 
-            <div class="container container-title">
-                <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha</h2>
+        <div class="container container-title">
+            <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha</h2>
+        </div>
+
+        <!-- Fecha -->
+        <div class="container listado">
+            <label for="date" class="sr-only">Seleccionar fecha</label>
+            <select id="inputState" class="form-control">
+                <option selected aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                <option aria-label="Jueves 26 de Noviembre">Jueves 26/11</option>
+                <option aria-label="Viernes 27 de Noviembre">Viernes 27/11</option>
+                <option aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                <option aria-label="Domingo 29 de Noviembre">Domingo 29/11</option>
+                <option aria-label="Lunes 30 de Noviembre">Lunes 30/11</option>
+                <option aria-label="Martes 1 de Diciembre">Martes 1/12</option>
+                <option aria-label="Miércoles 2 de Diciembre">Miércoles 2/12</option>
+            </select>
+        </div>
+
+        <div class="resultados-visibles">
+            <div class="nav nav-pills nav-justified" id="myTab" role="navigation">
+                <a class="nav-item nav-link active" id="horario" data-toggle="tab" href="#horarios" role="tab" aria-controls="horario" aria-selected="true">Ordenar por<br />horario</a>
+                <a class="nav-item nav-link" id="cercania" data-toggle="tab" href="#cercanias" role="tab" aria-controls="cercania" aria-selected="false">Ordenar por<br />cercanía</a>
             </div>
 
-            <!-- Fecha -->
-            <div class="container listado">
-                <label for="date" class="sr-only">Seleccionar fecha</label>
-                <select id="inputState" class="form-control">
-                    <option selected aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
-                    <option aria-label="Jueves 26 de Noviembre">Jueves 26/11</option>
-                    <option aria-label="Viernes 27 de Noviembre">Viernes 27/11</option>
-                    <option aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
-                    <option aria-label="Domingo 29 de Noviembre">Domingo 29/11</option>
-                    <option aria-label="Lunes 30 de Noviembre">Lunes 30/11</option>
-                    <option aria-label="Martes 1 de Diciembre">Martes 1/12</option>
-                    <option aria-label="Miércoles 2 de Diciembre">Miércoles 2/12</option>
-                </select>
-            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="horarios" role="tabpanel" aria-labelledby="horario">
+                    <div id="accordion" role="tablist">
 
-
-            <div class="resultados-visibles">
-                <div class="nav nav-pills nav-justified" id="myTab" role="navigation">
-                    <a class="nav-item nav-link active" id="horario" data-toggle="tab" href="#horarios" role="tab" aria-controls="horario" aria-selected="true">Ordenar por<br />horario</a>
-                    <a class="nav-item nav-link" id="cercania" data-toggle="tab" href="#cercanias" role="tab" aria-controls="cercania" aria-selected="false">Ordenar por<br />cercanía</a>
-                </div>
-
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="horarios" role="tabpanel" aria-labelledby="horario">
-                        <div id="accordion" role="tablist">
-
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingThree">
-                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        21:00 <span class="sr-only">horas</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="container container-title">
-                                            <h3 class="hora">21:15 <span class="sr-only">horas</span></h3>
-                                        </div>
-                                        <a href="seleccion.html" class="media" aria-label="Hoyts Abasto. Subtitulada 2D.">
-                                            <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
-                                            <div class="media-body" aria-hidden="true">
-                                                <h3 class="mt-0">Hoyts Abasto</h3>
-                                                <p>Subtitulada 2D</p>
-                                                <i class="fa fa-angle-right"></i>
-                                            </div>
-                                        </a>
-                                        <a href="seleccion.html" class="media" aria-label="Cinemark Puerto Madero. Subtitulada 2D.">
-                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero" aria-hidden="true">
-                                            <div class="media-body" aria-hidden="true">
-                                                <h3 class="mt-0">Cinemark Puerto Madero</h3>
-                                                <p>Subtitulada 2D</p>
-                                                <i class="fa fa-angle-right"></i>
-                                            </div>
-                                        </a>
-                                        <div class="container container-title">
-                                            <h3 class="hora">21:35 <span class="sr-only">horas</span></h3>
-                                        </div>
-                                        <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
-                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
-                                            <div class="media-body" aria-hidden="true">
-                                                <h3 class="mt-0">Cinemark Caballito</h3>
-                                                <p>Subtitulada 2D</p>
-                                                <i class="fa fa-angle-right"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a class="horarios collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    21:00 <span class="sr-only">horas</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
                             </div>
-
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingFour">
-                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        22:00 <span class="sr-only">horas</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="container container-title">
-                                            <h3 class="hora">22:10 <span class="sr-only">horas</span></h3>
-                                        </div>
-                                        <a href="seleccion.html" class="media" aria-label="Village Caballito. Subtitulada 2D.">
-                                            <img class="mr-3" src="img/logo-village.png" alt="Village Caballito" aria-hidden="true">
-                                            <div class="media-body" aria-hidden="true">
-                                                <h3 class="mt-0">Village Caballito</h3>
-                                                <p>Subtitulada 2D</p>
-                                                <i class="fa fa-angle-right"></i>
-                                            </div>
-                                        </a>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container container-title">
+                                        <h3 class="hora">21:15 <span class="sr-only">horas</span></h3>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header" role="tab" id="headingFive">
-                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        23:00 <span class="sr-only">horas</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="container container-title">
-                                            <h3 class="hora">23:45 <span class="sr-only">horas</span></h3>
+                                    <a href="seleccion.html" class="media" aria-label="Hoyts Abasto. Subtitulada 2D.">
+                                        <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
+                                        <div class="media-body" aria-hidden="true">
+                                            <h3 class="mt-0">Hoyts Abasto</h3>
+                                            <p>Subtitulada 2D</p>
+                                            <i class="fa fa-angle-right"></i>
                                         </div>
-                                        <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
-                                            <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
-                                            <div class="media-body" aria-hidden="true">
-                                                <h3 class="mt-0">Cinemark Caballito</h3>
-                                                <p>Subtitulada 2D</p>
-                                                <i class="fa fa-angle-right"></i>
-                                            </div>
-                                        </a>
+                                    </a>
+                                    <a href="seleccion.html" class="media" aria-label="Cinemark Puerto Madero. Subtitulada 2D.">
+                                        <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Puerto Madero" aria-hidden="true">
+                                        <div class="media-body" aria-hidden="true">
+                                            <h3 class="mt-0">Cinemark Puerto Madero</h3>
+                                            <p>Subtitulada 2D</p>
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </a>
+                                    <div class="container container-title">
+                                        <h3 class="hora">21:35 <span class="sr-only">horas</span></h3>
                                     </div>
+                                    <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
+                                        <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
+                                        <div class="media-body" aria-hidden="true">
+                                            <h3 class="mt-0">Cinemark Caballito</h3>
+                                            <p>Subtitulada 2D</p>
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane fade" id="cercanias" role="tabpanel" aria-labelledby="cercania">
-                        <div class="buscador">
-                            <div class="input-group">
-                                <label for="theatresearch" class="sr-only">Buscar por cine desde</label>
-                                <span class="input-group-addon" id="sizing-addon1" aria-hidden="true">Desde</span>
-                                <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFour">
+                                <a class="horarios collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    22:00 <span class="sr-only">horas</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container container-title">
+                                        <h3 class="hora">22:10 <span class="sr-only">horas</span></h3>
+                                    </div>
+                                    <a href="seleccion.html" class="media" aria-label="Village Caballito. Subtitulada 2D.">
+                                        <img class="mr-3" src="img/logo-village.png" alt="Village Caballito" aria-hidden="true">
+                                        <div class="media-body" aria-hidden="true">
+                                            <h3 class="mt-0">Village Caballito</h3>
+                                            <p>Subtitulada 2D</p>
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="map" id="mapid" aria-label="mapa"></div>
-
-                        <div class="container listado">
-                            <h2 class="founded-title">
-                                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> ¡Encontramos <strong>4</strong> cines cercanos!
-                            </h2>
-                            <hr>
-                            <div class="resultados">
-                                <a href="seleccionar-horario.html" class="media" aria-label="Hoyts Abasto. Avenida Corrientes 3247, CABA. A 1,2 kilómetros">
-                                    <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
-                                    <div class="media-body" aria-hidden="true">
-                                        <h3 class="mt-0">Hoyts Abasto</h3>
-                                        <p>Av. Corrientes 3247, CABA</p>
-                                        <span class="badge badge-secondary near">1,2Km</span>
-                                    </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFive">
+                                <a class="horarios collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    23:00 <span class="sr-only">horas</span>
+                                    <i class="fa fa-angle-down"></i>
                                 </a>
-                                <a href="seleccionar-horario.html" class="media" aria-label="Cinemark Caballito. Avenida La Plata 80, CABA. A 1,2 kilómetros">
-                                    <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
-                                    <div class="media-body" aria-hidden="true">
-                                        <h3 class="mt-0">Cinemark Caballito</h3>
-                                        <p>Av. La Plata 80, CABA</p>
-                                        <span class="badge badge-secondary halfway">1,2km</span>
+                            </div>
+                            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="container container-title">
+                                        <h3 class="hora">23:45 <span class="sr-only">horas</span></h3>
                                     </div>
-                                </a>
-                                <a href="seleccionar-horario.html" class="media" aria-label="Cinemark Palermo. Antonio Berutti 3399, CABA. A 2,6 kilómetros">
-                                    <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Palermo" aria-hidden="true">
-                                    <div class="media-body" aria-hidden="true">
-                                        <h3 class="mt-0">Cinemark Palermo</h3>
-                                        <p>Antonio Berutti 3399, CABA</p>
-                                        <span class="badge badge-secondary halfway">2,6km</span>
-                                    </div>
-                                </a>
-                                <a href="seleccionar-horario.html" class="media" aria-label="Villages Cines Caballito. Avenida Rivadavia 5071, CABA. A 4 kilómetros">
-                                    <img class="mr-3" src="img/logo-village.png" alt="Village Cines Caballito" aria-hidden="true">
-                                    <div class="media-body" aria-hidden="true">
-                                        <h3 class="mt-0">Village Cines Caballito</h3>
-                                        <p>Av. Rivadavia 5071, CABA</p>
-                                        <span class="badge badge-secondary far">4km</span>
-                                    </div>
-                                </a>
+                                    <a href="seleccion.html" class="media" aria-label="Cinemark Caballito. Subtitulada 2D.">
+                                        <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
+                                        <div class="media-body" aria-hidden="true">
+                                            <h3 class="mt-0">Cinemark Caballito</h3>
+                                            <p>Subtitulada 2D</p>
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="cercanias" role="tabpanel" aria-labelledby="cercania">
+                    <div class="buscador">
+                        <div class="input-group">
+                            <label for="theatresearch" class="sr-only">Buscar por cine desde</label>
+                            <span class="input-group-addon" id="sizing-addon1" aria-hidden="true">Desde</span>
+                            <input id="theatresearch" type="text" class="form-control" placeholder="Tu ubicación" aria-label="Tu ubicación">
+                        </div>
+                    </div>
+
+                    <div class="map" id="mapid" aria-label="mapa"></div>
+
+                    <div class="container listado">
+                        <h2 class="founded-title">
+                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> ¡Encontramos <strong>4</strong> cines cercanos!
+                        </h2>
+                        <hr>
+                        <div class="resultados">
+                            <a href="seleccionar-horario.html" class="media" aria-label="Hoyts Abasto. Avenida Corrientes 3247, CABA. A 1,2 kilómetros">
+                                <img class="mr-3" src="img/logo-hoyts.jpg" alt="Hoyts Abasto" aria-hidden="true">
+                                <div class="media-body" aria-hidden="true">
+                                    <h3 class="mt-0">Hoyts Abasto</h3>
+                                    <p>Av. Corrientes 3247, CABA</p>
+                                    <span class="badge badge-secondary near">1,2Km</span>
+                                </div>
+                            </a>
+                            <a href="seleccionar-horario.html" class="media" aria-label="Cinemark Caballito. Avenida La Plata 80, CABA. A 1,2 kilómetros">
+                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Caballito" aria-hidden="true">
+                                <div class="media-body" aria-hidden="true">
+                                    <h3 class="mt-0">Cinemark Caballito</h3>
+                                    <p>Av. La Plata 80, CABA</p>
+                                    <span class="badge badge-secondary halfway">1,2km</span>
+                                </div>
+                            </a>
+                            <a href="seleccionar-horario.html" class="media" aria-label="Cinemark Palermo. Antonio Berutti 3399, CABA. A 2,6 kilómetros">
+                                <img class="mr-3" src="img/logo-cinemark.png" alt="Cinemark Palermo" aria-hidden="true">
+                                <div class="media-body" aria-hidden="true">
+                                    <h3 class="mt-0">Cinemark Palermo</h3>
+                                    <p>Antonio Berutti 3399, CABA</p>
+                                    <span class="badge badge-secondary halfway">2,6km</span>
+                                </div>
+                            </a>
+                            <a href="seleccionar-horario.html" class="media" aria-label="Villages Cines Caballito. Avenida Rivadavia 5071, CABA. A 4 kilómetros">
+                                <img class="mr-3" src="img/logo-village.png" alt="Village Cines Caballito" aria-hidden="true">
+                                <div class="media-body" aria-hidden="true">
+                                    <h3 class="mt-0">Village Cines Caballito</h3>
+                                    <p>Av. Rivadavia 5071, CABA</p>
+                                    <span class="badge badge-secondary far">4km</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </main>
 
 

@@ -755,6 +755,10 @@ h3.underline {
     color: #fff;
 }
 
+.custom-control-input:checked~.custom-control-indicator {
+    background-color: #0072ee;
+}
+
 .login, .register {
     margin-top: 15px;
 }

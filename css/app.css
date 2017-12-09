@@ -176,8 +176,8 @@ hr {
 
         .nav-pills .nav-item .nav-link.active,
         .nav-pills .show>.nav-link {
-            border-bottom: 2px solid #4B9CFC;
-            color: #4B9CFC;
+            border-bottom: 2px solid #;
+            color: #0078d3;
         }
 
 /*------------------------ BUSCAR POR PELÍCULA ------------------------*/
@@ -233,7 +233,7 @@ hr {
     }
 
         .founded-title .fa {
-            color: #828282;
+            color: #767676;
         }
 
 /*------------------------ MAPA ------------------------*/
@@ -248,7 +248,7 @@ hr {
         list-style: none;
         padding: 10px 15px;
         margin: 0;
-        color: #828282;
+        color: #767676;
         background-color: #fff;
 
     }
@@ -324,7 +324,7 @@ a.media:after {
 .media-body p {
     width: 75%;
     font-size: 13px;
-    color: #828282;
+    color: #767676;
     margin-bottom: 0.2rem;
     white-space: nowrap;
     overflow: hidden;
@@ -376,7 +376,7 @@ a.media:after {
 .fanart h1 {
     color: #fff;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .movie-description {
@@ -409,7 +409,7 @@ a[data-toggle="collapse"] {
 }
 
 .fecha .fa {
-    color: #828282;
+    color: #767676;
 }
 
 .seleccionar-fecha {
@@ -463,7 +463,7 @@ a[data-toggle="collapse"] {
 
 .detalle-seleccion small {
     font-size: 13px;
-    color: #828282;
+    color: #767676;
     margin-bottom: 0.2rem;
 }
 
@@ -485,7 +485,7 @@ a[data-toggle="collapse"] {
 }
 
 .container-title .fa {
-    color: #828282;
+    color: #767676;
 }
 
 .container.botones {
@@ -562,15 +562,16 @@ a[data-toggle="collapse"] {
 
 .form-check-label .info {
     font-size: 13px;
+    font-weight: 600;
 }
 
 .form-check-label .info strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .form-check-label .info,
 .form-check-label .info .fa{
-    color: #56CCF2;
+    color: #4DB8DA;
 }
 
 .form-check .badge {
@@ -677,7 +678,7 @@ a[data-toggle="collapse"] {
 
 .detalle-seleccion .fa,
 .elegir-butacas .fa {
-    color: #828282;
+    color: #767676;
 }
 
 .elegir-butacas span {
@@ -685,7 +686,7 @@ a[data-toggle="collapse"] {
 }
 
 .elegir-butacas .ocupado .fa{
-    color: #ccc;
+    color: #767676;
 }
 
 .elegir-butacas .disponible .fa{
@@ -771,7 +772,7 @@ h3.underline {
 
 .register span {
     font-size: 13px;
-	color: #828282;
+	color: #767676;
 }
 
 .form-check-label small {
@@ -809,7 +810,7 @@ h3.underline {
 
 .bg-info {
     border-radius: 4px;
-    border: 1px solid #56CCF2;
+    border: 1px solid #4DB8DA;
     background-color: rgba(86, 204, 242, 0.3) !important;
     padding: 5px;
 }
@@ -904,7 +905,7 @@ h3.underline {
 }
 
 .seccion-perfil .fa {
-    color: #828282;
+    color: #767676;
     padding: 0 20px 0 5px;
 }
 
@@ -947,4 +948,9 @@ h3.underline {
 .advertencia {
     margin: 15px 0;
     padding: 10px;
+}
+
+
+.leaflet-container a.leaflet-popup-close-button {
+    color: #626262;
 }

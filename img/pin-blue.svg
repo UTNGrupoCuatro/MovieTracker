@@ -1,12 +1,42 @@
 <svg width="26" height="40" viewBox="0 0 26 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Pin azul</title>
+<title>Pin</title>
 <desc>Movie Tracker</desc>
-<g id="Canvas" transform="translate(-474 -2894)">
+<g id="Canvas" transform="translate(-34 -2894)">
+<g id="Pin">
+<g id="XMLID 15">
 <g id="XMLID 35">
-<use xlink:href="#path0_fill" transform="translate(474 2894)" fill="#0072EE"/>
+<use xlink:href="#path0_fill" transform="translate(34 2894)" fill="#0072EE"/>
+</g>
+<g id="XMLID 16">
+<g id="XMLID 32">
+<use xlink:href="#path1_fill" transform="translate(38.9177 2902.46)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 29">
+<use xlink:href="#path2_fill" transform="translate(46.2075 2899.17)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 26">
+<use xlink:href="#path3_fill" transform="translate(40.943 2898.96)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 23">
+<use xlink:href="#path4_fill" transform="translate(39.6539 2910.21)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 20">
+<use xlink:href="#path5_fill" transform="translate(49.5265 2904.49)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 17">
+<use xlink:href="#path6_fill" transform="translate(46.2901 2907.84)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
 </g>
 </g>
 <defs>
 <path id="path0_fill" d="M 13.0003 0C 5.83223 0 0 5.72898 0 12.7709C 0 15.0015 0.60495 17.2081 1.73018 19.1159L 12.2899 39.3859C 12.4259 39.6476 12.7001 39.8125 13.0003 39.8125C 13.2995 39.8125 13.5734 39.6476 13.7101 39.3859L 24.2508 19.1516C 25.3954 17.2081 26 15.0015 26 12.7709C 26 5.72898 20.1685 0 13.0003 0Z"/>
+<path id="path1_fill" d="M 5.54282 6.782L 1.38275 -6.8448e-08C 0.510281 1.26805 8.03772e-08 2.79515 8.03772e-08 4.43659C 8.03772e-08 5.2533 0.125738 6.04004 0.360947 6.782L 5.54282 6.782Z"/>
+<path id="path2_fill" d="M 2.35558e-08 4.36782L 8.11018 4.36782C 7.0672 2.19071 5.05004 0.552872 2.61333 5.13677e-08L 2.35558e-08 4.36782Z"/>
+<path id="path3_fill" d="M 2.66256 7.03185L 6.84624 0.0391733C 6.58539 0.0143834 6.32332 -5.02277e-08 6.05597 -5.02277e-08C 3.64652 -5.02277e-08 1.48124 1.04339 -1.72636e-07 2.69081L 2.66256 7.03185Z"/>
+<path id="path4_fill" d="M 5.63643 4.38501L 8.19562 -1.72265e-08L 7.72232e-08 -1.72265e-08C 1.07594 2.29545 3.23307 4.00563 5.82727 4.49295L 5.63643 4.38501Z"/>
+<path id="path5_fill" d="M -6.22864e-08 5.71943e-08L 4.0852 6.96469C 5.01057 5.67345 5.55586 4.10238 5.55586 2.40659C 5.55586 1.56787 5.42238 0.759147 5.17415 5.71943e-08L -6.22864e-08 5.71943e-08Z"/>
+<path id="path6_fill" d="M 4.06933 6.27286e-08L -1.13484e-07 6.97228C 0.233569 6.99266 0.470417 7.00506 0.708867 7.00506C 3.06461 7.00506 5.18676 6.01044 6.66514 4.42539L 4.06933 6.27286e-08Z"/>
 </defs>
 </svg>

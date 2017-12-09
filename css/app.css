@@ -303,7 +303,7 @@ a.media {
     color: #212529;
 }
 
-a.media:after {
+/*a.media:after {
     content: '\f105';
     width: 12px;
     font-family: FontAwesome;
@@ -311,6 +311,14 @@ a.media:after {
     position: absolute;
     right: 0;
     top: 27px;
+    color: #ccc;
+}*/
+
+a.media .fa {
+    position: absolute;
+    font-size: 24px;
+    right: 3px;
+    top: 33px;
     color: #ccc;
 }
 

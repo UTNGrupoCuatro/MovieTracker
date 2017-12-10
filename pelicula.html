@@ -290,15 +290,15 @@
         		}
         	});
 
-        	var blueIcon = new LeafIcon({iconUrl: 'img/pin-blue.png'}),
+            var blueIcon = new LeafIcon({iconUrl: 'img/pin-blue.png'}),
         		redIcon = new LeafIcon({iconUrl: 'img/pin-red.png'}),
                 hereIcon = new LeafIcon({iconUrl: 'img/pin-red.png'});
 
-        	L.marker([-34.601397, -58.417764], {icon: hereIcon}).bindPopup("Estoy aquí.").openPopup().addTo(mymap);
-        	L.marker([-34.603188, -58.410863], {icon: redIcon}).bindPopup("Hoyts Abasto. <br> Av. Corrientes 3247. CABA").openPopup().addTo(mymap);
-        	L.marker([-34.616099, -58.428778], {icon: blueIcon}).bindPopup("Cinemark Caballito. <br> Av. La Plata 80. CABA").openPopup().addTo(mymap);
-        	L.marker([-34.586177, -58.410333], {icon: blueIcon}).bindPopup("Cinemark Palermo. <br> Antonio Beruti 3399. CABA").openPopup().addTo(mymap);
-        	L.marker([-34.618137, -58.437518], {icon: blueIcon}).bindPopup("Village Cines Caballito. <br> Avenida Rivadavia 5071. CABA").openPopup().addTo(mymap);
+        	L.marker([-34.601397, -58.417764], {icon: hereIcon, alt: 'Estoy aquí.'}).bindPopup("Estoy aquí.").openPopup().addTo(mymap);
+        	L.marker([-34.603188, -58.410863], {icon: redIcon, alt: 'Hoyts Abasto.'}).bindPopup("Hoyts Abasto. <br> Av. Corrientes 3247. CABA").openPopup().addTo(mymap);
+        	L.marker([-34.616099, -58.428778], {icon: blueIcon, alt: 'Cinemark Caballito.'}).bindPopup("Cinemark Caballito. <br> Av. La Plata 80. CABA").openPopup().addTo(mymap);
+        	L.marker([-34.586177, -58.410333], {icon: blueIcon, alt: 'Cinemark Palermo.'}).bindPopup("Cinemark Palermo. <br> Antonio Beruti 3399. CABA").openPopup().addTo(mymap);
+        	L.marker([-34.618137, -58.437518], {icon: blueIcon, alt: 'Village Cines Caballito.'}).bindPopup("Village Cines Caballito. <br> Avenida Rivadavia 5071. CABA").openPopup().addTo(mymap);
         })
     </script>
 </body>

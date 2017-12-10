@@ -80,9 +80,18 @@
             <h2 class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha:</h2>
         </div>
 
-        <div class="seleccionar-fecha">
+        <div class="container listado">
             <label for="date" class="sr-only">Seleccionar fecha</label>
-            <input type="date" class="form-control" value="Seleccionar">
+            <select id="inputState" class="form-control">
+                <option selected aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                <option aria-label="Jueves 26 de Noviembre">Jueves 26/11</option>
+                <option aria-label="Viernes 27 de Noviembre">Viernes 27/11</option>
+                <option aria-label="Sábado 28 de Noviembre">Sábado 28/11</option>
+                <option aria-label="Domingo 29 de Noviembre">Domingo 29/11</option>
+                <option aria-label="Lunes 30 de Noviembre">Lunes 30/11</option>
+                <option aria-label="Martes 1 de Diciembre">Martes 1/12</option>
+                <option aria-label="Miércoles 2 de Diciembre">Miércoles 2/12</option>
+            </select>
         </div>
 
         <div class="resultados-visibles">
@@ -172,7 +181,7 @@
 
         $('.resultados-visibles').css('opacity', '0.3');
 
-        $(".seleccionar-fecha input").focusout(function() {
+        $(".listado select").focusout(function() {
             $('.resultados-visibles').css('opacity', '1');
         });
 

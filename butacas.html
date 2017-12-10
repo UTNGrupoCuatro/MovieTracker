@@ -146,20 +146,21 @@
 
             <div class="container elegir-butacas">
 
-                <div class="row">
+                <div class="row" aria-hidden="true">
                     <div class="col ocupado">
-                        <i class="fa fa-square" aria-hidden="true"></i> <span>Ocupado <span class="sr-only">Se muestran las butacas de color gris oscuro.</span></span>
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Ocupado</span>
                     </div>
                     <div class="col disponible">
-                        <i class="fa fa-square-o" aria-hidden="true"></i> <span>Disponible <span class="sr-only">Se muestran las butacas de color blanco con borde azul.</span></span>
+                        <i class="fa fa-square-o" aria-hidden="true"></i> <span>Disponible</span>
                     </div>
                     <div class="col seleccionado">
-                        <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado <span class="sr-only">Se muestran las butacas de color azul.</span></span>
+                        <i class="fa fa-square" aria-hidden="true"></i> <span>Seleccionado</span>
                     </div>
                 </div>
 
                 <table class="table table-butacas table-responsive">
-                    <thead>
+                    <caption class="sr-only">A continuación usted podrá elegir las butacas a comprar.</caption>
+                    <thead aria-hidden="true">
                         <tr>
                             <th scope="col" colspan="12"><span class="screen">Pantalla</span></th>
                         </tr>

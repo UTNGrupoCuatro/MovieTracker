@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/a89bf0eb2b.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-dark bg-primary">
+
+        <a class="btn-back" href="#" onclick="window.history.go(-1); return false;" aria-label="Volver">
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+        </a>
+
+        <h1 class="navbar-brand">Movie Tracker</h1>
+
+        <ul class="navbar-nav" role="menu">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" aria-label="Inicio">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="perfil.html" aria-label="Perfil">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="container container-title">
+            <h2>Declaración de accesibilidad</h2>
+            <h3>Politica de accesibilidad y cumplimiento de los estándares</h3>
+        </div>
+        <div class="container">
+            <p><span lang="en">Movie Tracker</span> tiene como objetivo hacer que todas las personas puedan acceder a la aplicación sin ningún tipo de barrera o impedimento. Para esto, tratamos de cumplir con todos los requisitos que se indican para el nivel AA de las <a href="https://www.w3.org/TR/WAI-WEBCONTENT/">Directrices de Accesibilidad dictadas por el W3C.</a></p>
+            <h3>Idioma</h3>
+            <p>Todas las páginas cuentan con la propiedad <pre><code>&lt;html lang="es-AR"&gt;</code></pre> lo cuál nos indica el idioma en el que está escrita la aplicación, para la correcta lectura por parte de los lectores de pantalla.</p>
+
+            <h3>Estructura</h3>
+            <p>Las páginas siguen el formato para cumplir con estos estándares, de modo que hemos respetado la estructura de encabezados consecuentes, para facilitar la navegación.</p>
+            <p>Tmbién, siguiendo con la línea del punto anterior, hemos separado HTML del CSS para que la información esté disponible siempre. El CSS empleado funciona de manera meramente decorativa.</p>
+
+            <h3>Texto</h3>
+            <p>El texto puede ser redimensionado por el usuario según su preferencia, hasta un 200% sin que por ello se pierda el contenido.</p>
+
+            <h3>Enlaces</h3>
+            <p>Todos los enlaces, incluso aquellos que estuvieran fuera de contexto, son comprensibles y claros.</p>
+
+            <h3>Etiquetas</h3>
+            <p>Todos los campos de texto están acompañados de su correspondiente <span lang="en">label</span> para una correcta asignación de la funcionalidad y que el usuario entienda cuál es el objetivo de ese campo.</p>
+            
+            <h3>Imágenes</h3>
+            <p>Cuando es necesario mostrar una imagen, ésta está acompañada de un texto alternativo que proporciona información textual sobre la misma.</p>
+
+            <h3>Dependencia de dispositivo</h3>
+            <p>No se requiere un límite de tiempo específico para realizar las pulsaciones de las teclas. Todo el contenido es operable a través de un teclado.</p>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+</body>
+</html>

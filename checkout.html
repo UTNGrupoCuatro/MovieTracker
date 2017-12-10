@@ -52,61 +52,79 @@
                             <small>Subtitulada 2D</small>
                         </div>
                     </div>
+                </div>
+                <div class="container detalle-seleccion">
                     <div class="row">
-                        <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver detalle <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="col-1">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="sr-only">Cine: </span>
+                        </div>
+                        <div class="col-11">
+                            <h2>Hoyts Abasto</h2>
+                            <small>Av. Corrientes 3247, CABA</small>
+                        </div>
                     </div>
+                </div>
+                <div class="container detalle-seleccion">
                     <div class="row">
-                        <div class="container">
-                            <div class="collapse" id="collapseExample">
-                                <div class="seleccion">
-                                    <div class="detalle-seleccion">
-                                        <div class="row">
-                                            <div class="col-1">
-                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                <span class="sr-only">Cine: </span>
-                                            </div>
-                                            <div class="col-11">
-                                                <h2>Hoyts Abasto</h2>
-                                                <small>Av. Corrientes 3247, CABA</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="detalle-seleccion">
-                                        <div class="row">
-                                            <div class="col-1">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <span class="sr-only">Fecha: </span>
-                                            </div>
-                                            <div class="col-5">
-                                                <div class="fecha">
-                                                    sábado 20/11
-                                                </div>
-                                            </div>
-                                            <div class="col-1">
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                <span class="sr-only">Horario: </span>
-                                            </div>
-                                            <div class="col-5">
-                                                <div class="horario">
-                                                    21:15
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="detalle-seleccion">
-                                        <div class="row">
-                                            <div class="col-1">
-                                                <i class="fa fa-braille" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="col-11">
-                                                4 y 5. Fila G. Sala 2
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-1">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="sr-only">Fecha: </span>
+                        </div>
+                        <div class="col-5">
+                            <div class="fecha">
+                                sábado 20/11
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span class="sr-only">Horario: </span>
+                        </div>
+                        <div class="col-5">
+                            <div class="horario">
+                                21:15
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container detalle-seleccion">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-braille" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-11">
+                            4 y 5. Fila G. Sala 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de beneficios -->
+            <div class="container container-title">
+                <label for="inputState">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-11">
+                            <h3>Tarjeta de beneficios</h3>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="container listado">
+                <select id="inputState" class="form-control">
+                    <option selected aria-label="Club la Nación 2 por 1">Club La Nación 2x1</option>
+                    <option aria-label="Clarin tres seis cinco 2 por 1">Clarin 365 2x1</option>
+                    <option aria-label="Club Personal 2 por 1">Club Personal 2x1</option>
+                    <option aria-label="Cablevisión Clientes 2 por 1">Cablevisión Clientes 2x1</option>
+                </select>
+            </div>
+
+            <div class="container listado">
+                <label for="InputName">Número de Tarjeta de Beneficios</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" placeholder="Ej.: 1234 5678 9012 3456" aria-label="Ej.: 1234 5678 9012 3456" aria-describedby="basic-addon2">
                 </div>
             </div>
 
@@ -126,10 +144,10 @@
             <div class="container listado">
                 <div class="row">
                     <div class="col-9">
-                        <span>Sin beneficio aplicado</span>
+                        <span>Con Club La Nación 2x1</span>
                     </div>
-                    <div class="col-3">
-                        <strong class="precio">$160</strong>
+                    <div class="col-3 text-right">
+                        <strong class="precio">$80</strong>
                     </div>
                 </div>
             </div>
@@ -173,14 +191,6 @@
                                                 </div>
                                             </div>
                                             <span class="col" data-toggle="tooltip">¿Dónde está el código?</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="InputName">Número de Tarjeta de Beneficios <br />
-                                            <small>Club La Nación 2x1</small>
-                                            </label>
-                                            <div class="input-group">
-                                                <input type="number" class="form-control" placeholder="Ej.: 1234 5678 9012 3456" aria-label="Ej.: 1234 5678 9012 3456" aria-describedby="basic-addon2">
-                                            </div>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
@@ -237,7 +247,7 @@
 
             <div class="container container-title">
                 <a href="eticket.html" class="btn btn-primary btn-block">Confirmar compra</a>
-                <a class="btn btn-link btn-block" onclick="window.history.go(-1); return false;">Cancelar</a>
+                <a href="#" class="btn btn-outline-primary btn-block" onclick="window.history.go(-1); return false;">Cancelar</a>
             </div>
         </div>
 

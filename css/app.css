@@ -50,6 +50,10 @@ a {
     background-color: #fff;
 }
 
+main {
+    padding-bottom: 30px;
+}
+
 hr {
     border: 0;
     height: 0;

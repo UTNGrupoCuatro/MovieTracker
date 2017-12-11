@@ -42,6 +42,10 @@ a {
     color: #0072ee;
 }
 
+a:hover, a:visited {
+  text-decoration: none;
+}
+
 .container {
     padding-bottom: 15px;
 }
